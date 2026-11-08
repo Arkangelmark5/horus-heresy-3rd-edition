@@ -12493,25 +12493,6 @@
                 "type": "selectionEntryGroup"
               },
               {
-                "name": "Breacher Charges",
-                "id": "06b6-7483-0edb-9d1a",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 10,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "6819-7e13-adc5-abae", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [{"childId": "da17-ab73-7d33-c76f", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "atLeast", "value": 1}]
-                  }
-                ]
-              },
-              {
                 "name": "Frag grenades",
                 "id": "a24f-980a-79e3-d168",
                 "hidden": false,
@@ -29460,17 +29441,6 @@
                 "sortIndex": 8,
                 "targetId": "ef74-faa7-0d36-762b",
                 "type": "selectionEntryGroup"
-              },
-              {
-                "name": "Breacher Charges",
-                "id": "1cfa-6833-a012-fcd9",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 9,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "1c98-c9a8-d2c9-8f1d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
               },
               {
                 "name": "Prosperine Arcana",
@@ -68882,17 +68852,6 @@
                 "type": "selectionEntryGroup"
               },
               {
-                "name": "Breacher Charges",
-                "id": "7763-d63e-4c88-a816",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 7,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "b8a2-e8ac-3ed6-bc49", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
-              },
-              {
                 "name": "Prosperine Arcana",
                 "id": "aa56-d04e-c2e0-ea57",
                 "hidden": false,
@@ -71778,16 +71737,6 @@
                 "import": true,
                 "targetId": "ef74-faa7-0d36-762b",
                 "type": "selectionEntryGroup"
-              },
-              {
-                "name": "Breacher Charges",
-                "id": "ce86-f7f7-ebaf-b15b",
-                "hidden": false,
-                "import": true,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "ee8f-53de-8546-866c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
               },
               {"name": "Prosperine Arcana", "id": "5924-718d-f899-ef24", "hidden": true, "import": true, "targetId": "eafe-beb3-8d27-ec50", "type": "selectionEntryGroup"},
               {
@@ -97977,16 +97926,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "name": "Breacher Charges",
-                "id": "2184-7232-8de2-8580",
-                "hidden": false,
-                "import": true,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "dee1-df1e-f877-dfdb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}]
               }
             ],
             "modifiers": [
@@ -116571,44 +116510,7 @@
             "targetId": "01e9-334c-80cb-f1c6",
             "type": "selectionEntry",
             "constraints": [{"id": "8bc8-fe1e-ad28-ed9a", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}],
-            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5}],
-            "entryLinks": [
-              {
-                "name": "Breacher Charges",
-                "id": "7040-4e62-96fe-9d17",
-                "hidden": true,
-                "import": true,
-                "targetId": "01bd-4377-904c-6625",
-                "type": "selectionEntry",
-                "constraints": [{"id": "ccbe-d9db-1adc-246d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": false,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {"childId": "9871-cb62-5283-2216", "field": "selections", "includeChildSelections": true, "scope": "model", "shared": true, "type": "instanceOf", "value": 1},
-                          {
-                            "childId": "8045-89a4-76d4-fcef",
-                            "childName": "Sergeant Model Sub-Type",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "model",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 5}]
           },
           {
             "name": "Charnabal sabre",
