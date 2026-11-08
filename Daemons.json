@@ -17,7 +17,7 @@
       {"name": "Special Rules", "id": "d3fb-7301-fdf8-d8b6", "targetId": "106b-693b-99f2-00c3", "type": "catalogue"},
       {"name": "Mechanicum", "id": "37b9-57dc-a188-6bb6", "targetId": "2f57-6e9d-8a7b-5c2e", "type": "catalogue"}
     ],
-    "categoryEntries": [{"name": "has Bulky (X)", "id": "1c0c-f10a-c186-4f21", "hidden": false}, {"name": "Tzeench", "id": "ae2f-1378-9622-a874", "hidden": false}],
+    "categoryEntries": [{"name": "has Bulky (X)", "id": "1c0c-f10a-c186-4f21", "hidden": false}, {"name": "Tzeentch", "id": "ae2f-1378-9622-a874", "hidden": false}],
     "entryLinks": [
       {
         "name": "Ruinstorm Daemon Sovereign",
@@ -366,7 +366,7 @@
         ]
       },
       {
-        "name": "Ascendant Lord of Tzeench",
+        "name": "Ascendant Lord of Tzeentch",
         "id": "891d-e014-b6f4-655a",
         "hidden": false,
         "import": true,
@@ -375,7 +375,7 @@
         "categoryLinks": [{"name": "High Command", "id": "19e5-78b1-22e4-947e", "hidden": false, "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
       },
       {
-        "name": "Herald of Tzeench",
+        "name": "Herald of Tzeentch",
         "id": "a65a-3c08-1b58-8ffa",
         "hidden": false,
         "import": true,
@@ -393,7 +393,7 @@
         "categoryLinks": [{"name": "Warlord", "id": "6472-8922-73b1-e53e", "hidden": false, "primary": true, "targetId": "22ee-7208-4089-b005"}]
       },
       {
-        "name": "Flamers of Tzeench",
+        "name": "Flamers of Tzeentch",
         "id": "70bd-663d-ef2f-61b1",
         "hidden": false,
         "import": true,
@@ -402,7 +402,7 @@
         "categoryLinks": [{"name": "Support", "id": "9eef-a0b5-729c-5ea1", "hidden": false, "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}]
       },
       {
-        "name": "Screamers of Tzeench",
+        "name": "Screamers of Tzeentch",
         "id": "f49f-13bd-be70-7c1f",
         "hidden": false,
         "import": true,
@@ -411,7 +411,7 @@
         "categoryLinks": [{"name": "Fast Attack", "id": "df23-55f8-12ef-5c44", "hidden": false, "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
-        "name": "Horrors of Tzeench",
+        "name": "Horrors of Tzeentch",
         "id": "9544-7c0b-eb6c-dec5",
         "hidden": false,
         "import": true,
@@ -588,7 +588,7 @@
         ]
       },
       {
-        "name": "Tzeench",
+        "name": "Tzeentch",
         "id": "445c-dc68-019d-79d8",
         "hidden": false,
         "typeId": "d5a9-9164-1e30-7a35",
@@ -655,6 +655,25 @@
             "typeId": "57cf-1c68-a020-2529"
           }
         ]
+      },
+      {
+        "name": "Master of Fates",
+        "id": "a0ce-c0f1-280f-d8d8",
+        "hidden": false,
+        "typeId": "9b5f-da4e-5739-cbcf",
+        "typeName": "Gambit",
+        "characteristics": [
+          {
+            "name": "Summary",
+            "$text": "The Controlling Player may choose to use the Characteristics of a Lord of Change to make Attacks.",
+            "typeId": "98f3-41cf-e3be-2ae7"
+          },
+          {
+            "name": "Description",
+            "$text": "While this Gambit is selected for a Model, the Controlling Player may make Hit Tests and Wound Tests during the Strike Step using the Weapon Skill and Strength Characteristics, and Weapon Profiles listed for the Lord of Change instead of using the Characteristics and Weapons of the Model this Gambit is selected for.",
+            "typeId": "2d7d-b1d9-dead-605a"
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -667,7 +686,7 @@
       {
         "name": "Primal Terror",
         "id": "44bb-4eee-0299-caba",
-        "description": "**Opposing Units must make Leadership Checks when making a Reaction triggered by, or a Charge targeting, a Model with this Special Rule.**\n\n\n\n\nWhen a Unit with a Model with the Primal Terror Special Rule is declared as the Target Unit of a Charge or as the Target Unit of a Reaction or Advanced Reaction, the Controlling Player of the Unit the Charge or Reaction is declared for must make a Leadership Check. If the Leadership is passed, the Charge or Reaction is resolved as normal. If the Check is failed, the Unit for which the Charge or Reaction was declared for immediately gains the Stunned Status and the Controlling Player may not declare another Charge or Reaction for that Unit during this Phase, but their remaining Reaction Allotment is not reduced.",
+        "description": "**Opposing Units must make Leadership Checks when making a Reaction triggered by, or a Charge targeting, a Model with this Special Rule.**\n\n\n\n\nWhen a Unit with a Model with the Primal Terror Special Rule is declared as the Target Unit of a Charge or as the Target Unit of a Reaction or Advanced Reaction, the Controlling Player of the Unit the Charge or Reaction is declared for must make a Leadership Check. If the Check is passed, the Charge or Reaction is resolved as normal. If the Check is failed, the Unit the Charge or Reaction was declared for immediately gains the Stunned Status and the Controlling Player may not declare another Charge or Reaction for that Unit during this Phase, but their remaining Reaction Allotment is not reduced.",
         "hidden": false
       },
       {
@@ -706,7 +725,7 @@
             "characteristics": [
               {
                 "name": "Summary",
-                "$text": "Models with the Malefic Type suffer fewer wounds in place of gaining Tactical Status, if the Unit they are part of has this Wargear item.",
+                "$text": "Models with the Malefic Sub-Type suffer fewer wounds in place of gaining Tactical Status, if the Unit they are part of has this Wargear item.",
                 "typeId": "8e7d-a0ae-fd85-983c"
               },
               {
@@ -5175,13 +5194,13 @@
         ]
       },
       {
-        "name": "Ascendant Lord of Tzeench",
+        "name": "Ascendant Lord of Tzeentch",
         "id": "0e15-cefd-3309-5664",
         "hidden": false,
         "import": true,
         "sortIndex": 101,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "d88b-1a84-2b3f-ec05", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "d88b-1a84-2b3f-ec05", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "costs": [
           {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 300},
           {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -5223,7 +5242,7 @@
         ],
         "infoLinks": [
           {"name": "Psyker", "id": "7d37-9cc3-578b-989d", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
-          {"name": "Tzeench", "id": "af6c-000a-d325-f945", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "af6c-000a-d325-f945", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {"name": "Fateweaver", "id": "a10d-b093-129d-a57c", "hidden": false, "targetId": "5551-2eee-e6b4-094b", "type": "profile"},
           {
             "name": "Bulky (X)",
@@ -5291,7 +5310,8 @@
             "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
           },
           {"name": "Champion of the Dark Gods", "id": "5f4d-2d6e-d090-a811", "hidden": false, "targetId": "b086-4006-5762-38f1", "type": "rule"},
-          {"name": "Convocators", "id": "1add-2e31-d756-3a42", "hidden": false, "targetId": "ba1c-33d2-1061-4528", "type": "rule"}
+          {"name": "Convocators", "id": "1add-2e31-d756-3a42", "hidden": false, "targetId": "ba1c-33d2-1061-4528", "type": "rule"},
+          {"name": "Master of Fates", "id": "3539-5e88-ca40-3ac8", "hidden": false, "targetId": "a0ce-c0f1-280f-d8d8", "type": "profile"}
         ],
         "modifiers": [
           {
@@ -5500,7 +5520,7 @@
                           {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
                           {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
                           {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-                          {"name": "Special Rules", "$text": "Duellist's Edge(1), Critical Hits (6+)", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Special Rules", "$text": "Duellist's Edge (1), Critical Hit (6+)", "typeId": "ebe0-7b28-b40c-694e"},
                           {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
                         ]
                       }
@@ -5547,7 +5567,7 @@
                           {"name": "SM", "$text": "+2", "typeId": "4505-de6f-d4ae-6280"},
                           {"name": "AP", "$text": "2", "typeId": "a014-126b-3b7b-27e8"},
                           {"name": "D", "$text": "2", "typeId": "6a9d-4feb-065a-33e7"},
-                          {"name": "Special Rules", "$text": "Critical Hits (5+)", "typeId": "ebe0-7b28-b40c-694e"},
+                          {"name": "Special Rules", "$text": "Critical Hit (5+)", "typeId": "ebe0-7b28-b40c-694e"},
                           {"name": "Traits", "$text": "Immaterial", "typeId": "76e3-c188-bc65-3467"}
                         ]
                       }
@@ -5604,13 +5624,13 @@
         ]
       },
       {
-        "name": "Herald of Tzeench",
+        "name": "Herald of Tzeentch",
         "id": "e306-6512-1f49-49c7",
         "hidden": false,
         "import": true,
         "sortIndex": 102,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "a258-dd5c-11ec-7613", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "a258-dd5c-11ec-7613", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "costs": [
           {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 135},
           {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -5671,10 +5691,11 @@
           },
           {"name": "Herald of Unreality", "id": "8126-1625-5213-c09c", "hidden": false, "targetId": "395b-8055-cbc3-2642", "type": "rule"},
           {"name": "[Allegiance]", "id": "d30b-7f91-8201-c8ef", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Tzeench", "id": "05d0-6a90-8981-588d", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "05d0-6a90-8981-588d", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {"name": "Psyker", "id": "e92f-a2d7-03a6-e86c", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
           {"name": "Fateweaver", "id": "ef0c-c6a8-8137-cd42", "hidden": false, "targetId": "5551-2eee-e6b4-094b", "type": "profile"},
-          {"name": "Convocators", "id": "bb64-11b1-e127-5058", "hidden": false, "targetId": "ba1c-33d2-1061-4528", "type": "rule"}
+          {"name": "Convocators", "id": "bb64-11b1-e127-5058", "hidden": false, "targetId": "ba1c-33d2-1061-4528", "type": "rule"},
+          {"name": "Master of Fates", "id": "4319-50bb-1724-5f13", "hidden": false, "targetId": "a0ce-c0f1-280f-d8d8", "type": "profile"}
         ],
         "modifiers": [
           {
@@ -5697,7 +5718,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Herald of Tzeench",
+            "name": "Herald of Tzeentch",
             "id": "35fc-1a91-149b-4bdf",
             "hidden": false,
             "import": true,
@@ -5713,7 +5734,7 @@
             ],
             "profiles": [
               {
-                "name": "Herald of Tzeench",
+                "name": "Herald of Tzeentch",
                 "id": "edab-b7ac-973a-d793",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
@@ -5930,7 +5951,7 @@
         "import": true,
         "sortIndex": 106,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "13a0-b988-d7bc-7efa", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "13a0-b988-d7bc-7efa", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "constraints": [
           {
             "id": "59d3-c3f1-d672-3993",
@@ -5955,7 +5976,7 @@
         ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "feba-aa89-165b-cb1d", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Tzeench", "id": "7ad3-2ca4-63ee-c9f0", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "7ad3-2ca4-63ee-c9f0", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {"name": "Psyker", "id": "2949-c422-ce16-af06", "hidden": false, "targetId": "0d5a-bf3a-7b46-785a", "type": "profile"},
           {"name": "Fateweaver", "id": "4e62-8a8e-d4b4-60dc", "hidden": false, "targetId": "5551-2eee-e6b4-094b", "type": "profile"},
           {
@@ -5970,11 +5991,11 @@
           {
             "name": "Eternal Warrior (X)",
             "id": "8293-991a-ffa1-a138",
-            "comment": "1",
+            "comment": "2",
             "hidden": false,
             "targetId": "15b4-9e4a-f361-c5a3",
             "type": "rule",
-            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+            "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "2"}]
           },
           {
             "name": "Fear (X)",
@@ -6085,7 +6106,7 @@
             ],
             "selectionEntries": [
               {
-                "name": "Staff of Tzeench",
+                "name": "Staff of Tzeentch",
                 "id": "09a2-236d-6125-4c60",
                 "hidden": false,
                 "import": true,
@@ -6126,7 +6147,7 @@
                 ],
                 "profiles": [
                   {
-                    "name": "Staff of Tzeench",
+                    "name": "Staff of Tzeentch",
                     "id": "56f6-58df-3ef5-f952",
                     "hidden": false,
                     "typeId": "3587-6dcd-005c-c263",
@@ -6251,13 +6272,13 @@
         ]
       },
       {
-        "name": "Flamers of Tzeench",
+        "name": "Flamers of Tzeentch",
         "id": "b8de-a6ca-73b3-72df",
         "hidden": false,
         "import": true,
         "sortIndex": 103,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "a013-4c18-b6b1-b798", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "a013-4c18-b6b1-b798", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "entryLinks": [
           {
             "name": "Prime Unit",
@@ -6280,7 +6301,7 @@
         ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "2c8f-9045-b00f-cca1", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Tzeench", "id": "fe2c-9436-6335-1c36", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "fe2c-9436-6335-1c36", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {"name": "Move Through Cover", "id": "b5ce-d164-e1dd-7830", "hidden": false, "targetId": "44d9-f20d-00bf-dc98", "type": "rule"},
           {
             "name": "Fear (X)",
@@ -6323,7 +6344,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Flamer of Tzeench",
+            "name": "Flamer of Tzeentch",
             "id": "9beb-7964-4aa7-4c7d",
             "hidden": false,
             "import": true,
@@ -6365,7 +6386,7 @@
                 "conditions": [
                   {
                     "childId": "34a6-68ad-0b75-b4ac",
-                    "childName": "Exalted Flamer of Tzeench",
+                    "childName": "Exalted Flamer of Tzeentch",
                     "field": "selections",
                     "includeChildSelections": true,
                     "scope": "unit-self",
@@ -6382,7 +6403,7 @@
                 "conditions": [
                   {
                     "childId": "34a6-68ad-0b75-b4ac",
-                    "childName": "Exalted Flamer of Tzeench",
+                    "childName": "Exalted Flamer of Tzeentch",
                     "field": "selections",
                     "includeChildSelections": true,
                     "scope": "unit",
@@ -6395,7 +6416,7 @@
             ],
             "profiles": [
               {
-                "name": "Flamer of Tzeench",
+                "name": "Flamer of Tzeentch",
                 "id": "004f-ab5d-b6f8-7705",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
@@ -6514,7 +6535,7 @@
             ]
           },
           {
-            "name": "Exalted Flamer of Tzeench",
+            "name": "Exalted Flamer of Tzeentch",
             "id": "34a6-68ad-0b75-b4ac",
             "hidden": false,
             "import": true,
@@ -6561,7 +6582,7 @@
             ],
             "profiles": [
               {
-                "name": "Exalted Flamer of Tzeench",
+                "name": "Exalted Flamer of Tzeentch",
                 "id": "0361-1ab8-91f8-337b",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
@@ -6703,13 +6724,13 @@
         ]
       },
       {
-        "name": "Screamers of Tzeench",
+        "name": "Screamers of Tzeentch",
         "id": "6e09-fdbd-dc83-ed56",
         "hidden": false,
         "import": true,
         "sortIndex": 104,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "5056-7912-7605-73b2", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "5056-7912-7605-73b2", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "costs": [
           {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
           {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -6770,7 +6791,7 @@
             "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "3"}]
           },
           {"name": "[Allegiance]", "id": "8efc-ec73-4e3e-3891", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Tzeench", "id": "537c-931f-dc0b-5cf6", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "537c-931f-dc0b-5cf6", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {"name": "Convocators", "id": "4697-4935-0896-6706", "hidden": false, "targetId": "ba1c-33d2-1061-4528", "type": "rule"}
         ],
         "modifiers": [
@@ -6794,7 +6815,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Screamer of Tzeench",
+            "name": "Screamer of Tzeentch",
             "id": "a7b7-ec54-d898-d43b",
             "hidden": false,
             "import": true,
@@ -6821,7 +6842,7 @@
             ],
             "profiles": [
               {
-                "name": "Screamer of Tzeench",
+                "name": "Screamer of Tzeentch",
                 "id": "582b-d153-9486-a78b",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
@@ -6940,13 +6961,13 @@
         ]
       },
       {
-        "name": "Horrors of Tzeench",
+        "name": "Horrors of Tzeentch",
         "id": "d950-0c4a-5d81-0578",
         "hidden": false,
         "import": true,
         "sortIndex": 105,
         "type": "unit",
-        "categoryLinks": [{"name": "Tzeench", "id": "87bd-b531-2c4f-b3fe", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
+        "categoryLinks": [{"name": "Tzeentch", "id": "87bd-b531-2c4f-b3fe", "hidden": false, "primary": false, "targetId": "ae2f-1378-9622-a874"}],
         "costs": [
           {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20},
           {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -6979,7 +7000,7 @@
         ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "305e-1dbc-b4ce-26f6", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "Tzeench", "id": "ef6f-bcb0-0a93-5587", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+          {"name": "Tzeentch", "id": "ef6f-bcb0-0a93-5587", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
           {
             "name": "Fear (X)",
             "id": "6a78-a1f9-743c-c878",
@@ -7021,7 +7042,7 @@
               {"name": "Summary", "$text": "", "typeId": "5d02-0e54-0f6a-0f0b"},
               {
                 "name": "Trigger",
-                "$text": "The Reactive Player may declare an Infernal Mitosis Reaction in Step 9 of any Shooting Attack, if the Target Unit of the Shooting Attack includes one or more Models with the Infernal Mitosis Special Rule. However this Reaction cannot be triggered by a Shooting Attack made using only Weapons with the Disintegrator Trait.",
+                "$text": "The Reactive Player may declare an Infernal Mitosis Reaction in Step 9 of any Shooting Attack, if the Target Unit of the Shooting Attack includes one or more Models with the Infernal Mitosis Special Rule. However, this Reaction cannot be triggered by a Shooting Attack made using only Weapons with the Disintegrator Trait.",
                 "typeId": "02e4-3f90-3125-f8b4"
               },
               {
@@ -7036,7 +7057,7 @@
               },
               {
                 "name": "Process",
-                "$text": "1. During Step 11, after the Reactive Player has removed all Casualties from the Target Unit, two Blue Horror Models are placed on the Battlefield for each Pink Horror that was Removed as a Casualty. Blue Horrors must be placed within Unit Coherency of any Model in the Target Unit that was not placed on the Battlefield as a part of resolving this Reaction and may not be placed within 1\" of an Enemy Model. Any Models that cannot be placed on the Battlefield due to these restrictions are considered to be Destroyed.",
+                "$text": "1. During Step 11, after the Reactive Player has removed all Casualties from the Target Unit, two Blue Horror Models are placed on the Battlefield for each Pink Horror that was Removed as a Casualty. Blue Horrors must be placed within Unit Coherency of any Model in the Target Unit that was not placed on the Battlefield as part of resolving this Reaction and may not be placed within 1\" of an Enemy Model. Any Models that cannot be placed on the Battlefield due to these restrictions are considered to be Destroyed.",
                 "typeId": "57cf-1c68-a020-2529"
               }
             ]
@@ -7046,7 +7067,7 @@
           {
             "name": "Infernal Mitosis",
             "id": "887e-477a-6bde-c369",
-            "description": "A Unit that contains one or Models with this Special Rule may declare the Infernal Mitosis Reaction",
+            "description": "A Unit that contains one or more Models with this Special Rule may declare the Infernal Mitosis Reaction",
             "hidden": false
           }
         ],
@@ -7155,7 +7176,7 @@
                   {"name": "T", "$text": "4", "typeId": "3120-8275-e537-ecd2"},
                   {"name": "W", "$text": "1", "typeId": "f5cc-79a3-d302-cc1d"},
                   {"name": "I", "$text": "3", "typeId": "af9d-7db8-dc95-71c1"},
-                  {"name": "A", "$text": "2", "typeId": "024e-bdb1-7982-25a0"},
+                  {"name": "A", "$text": "1", "typeId": "024e-bdb1-7982-25a0"},
                   {"name": "LD", "$text": "7", "typeId": "02ad-ebe6-86e7-9fd6"},
                   {"name": "CL", "$text": "7", "typeId": "9cd1-0e7c-2cd6-5f2f"},
                   {"name": "WP", "$text": "8", "typeId": "f714-1726-37d3-44df"},
@@ -9424,7 +9445,7 @@
                     "conditions": [
                       {
                         "childId": "ae2f-1378-9622-a874",
-                        "childName": "Tzeench",
+                        "childName": "Tzeentch",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -9527,7 +9548,7 @@
                     "conditions": [
                       {
                         "childId": "ae2f-1378-9622-a874",
-                        "childName": "Tzeench",
+                        "childName": "Tzeentch",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -9633,7 +9654,7 @@
                 "conditions": [
                   {
                     "childId": "ae2f-1378-9622-a874",
-                    "childName": "Tzeench",
+                    "childName": "Tzeentch",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -9918,7 +9939,7 @@
                     "conditions": [
                       {
                         "childId": "ae2f-1378-9622-a874",
-                        "childName": "Tzeench",
+                        "childName": "Tzeentch",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,

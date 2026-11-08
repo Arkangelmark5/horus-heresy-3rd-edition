@@ -1001,10 +1001,10 @@
                 "$text": "The Target Unit must be a Unit that has no Models with the Vehicle Type under the control of the Reactive Player with at least one Model within 15\" of the Focus and with Line of Sight to the Focus.",
                 "typeId": "2ba0-fbf8-ed6c-3770"
               },
-              {"name": "Duration", "$text": "If successfully Manifested, the effect of the Psychic Power are resolved immediately.", "typeId": "d7d5-5b31-5b37-66c4"},
+              {"name": "Duration", "$text": "If successfully Manifested, the effects of the Psychic Power are resolved immediately.", "typeId": "d7d5-5b31-5b37-66c4"},
               {
                 "name": "Process",
-                "$text": "1. Once the Focus and Target Unit have been decided, the Controlling Player of the Target Unit must make a Resistance Check. If the Willpower Characteristic of the Focus is greater than the Willpower Characteristic of the Target the result of the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 10 and the Willpower Characteristic of the Target is 8, the Result of the Resistance Check is modified by +2. Likewise if the Willpower Characteristic of the Focus is less than the Willpower Characteristic of the Target the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 7 and the Willpower Characteristic of the Target is 9 the result of the Resistance Check is modified by -2. Models without a Willpower Characteristic are considered to have a Willpower Characteristic of 12 for the purposes of resolving this Psychic Power.\n2. If the Resistance Check is failed then the Controlling Player of the Target Unit must roll on the following table, and the Target Unit gains the corresponding Tactical Status\n\n\n1 - Pinned\n2-3 Stunned\n4-6 Suppressed\n\n\n3. If the Resistance Check is passed then there is no further effect.",
+                "$text": "1. Once the Focus and Target Unit have been decided, the Controlling Player of the Target Unit must make a Resistance Check. If the Willpower Characteristic of the Focus is greater than the Willpower Characteristic of the Target the result of the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 10 and the Willpower Characteristic of the Target is 8, the Result of the Resistance Check is modified by +2. Likewise if the Willpower Characteristic of the Focus is less than the Willpower Characteristic of the Target the result of the Resistance Check is modified by the amount that the characteristics differ, for example, if the Willpower Characteristic of the Focus is 7 and the Willpower Characteristic of the Target is 9 the result of the Resistance Check is modified by -2. Models without a Willpower Characteristic are considered to have a Willpower Characteristic of 12 for the purposes of resolving this Psychic Power.\n2. If the Resistance Check is failed then the Controlling Player of the Target Unit must roll on the following table, and the Target Unit gains the corresponding Tactical Status\n\n\n1 - Pinned\n2-3 Stunned\n4-6 Suppressed\n\n\n3. If the Resistance Check is passed then there is no further effect.",
                 "typeId": "3804-b2cf-9f1a-4ff0"
               }
             ]
@@ -1024,7 +1024,7 @@
               {"name": "Trigger", "$text": "The Active Player may choose to Manifest the Phasewarp Psychic Power in the Shooting Phase", "typeId": "1be9-f118-1cf3-357e"},
               {
                 "name": "Focus",
-                "$text": "The Focus of the Power must be a Model with the Fateweaver Trait and must be controller by the Active Player",
+                "$text": "The Focus of the Power must be a Model with the Fateweaver Trait and must be controlled by the Active Player",
                 "typeId": "3f2d-f6e7-e6d3-1f86"
               },
               {
@@ -1034,7 +1034,7 @@
               },
               {
                 "name": "Duration",
-                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Opposing Player's Shooting Phase.",
+                "$text": "If successfully Manifested, the effects of this Psychic Power last until the end of the Opposing Player's next Shooting Phase.",
                 "typeId": "d7d5-5b31-5b37-66c4"
               },
               {
