@@ -120729,6 +120729,14 @@
                   {"childId": "d9a6-9b5f-b18a-4d63", "childName": "High Command", "field": "selections", "scope": "ancestor", "shared": true, "type": "notInstanceOf", "value": 1}
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Sagyar Mazan",
+                "id": "9f0b-0cb1-94df-2aea",
+                "description": "All Models in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Expendable (2) Special Rule.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -120748,6 +120756,15 @@
                   {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                   {"childId": "88e6-d373-4152-0dd8", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Wraiths",
+                "id": "d62f-a349-502e-2b2b",
+                "description": " Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Wraiths Special Rule.",
+                "hidden": false,
+                "noindex": true
               }
             ]
           },
@@ -121056,6 +121073,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Revenants",
+                "id": "96ed-7ab8-2b26-dfc5",
+                "description": "Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Fear (1) Special Rule.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -121097,6 +121122,14 @@
                     "value": 1
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Castellan",
+                "id": "b133-b035-b76f-de4a",
+                "description": "A Model selected to fill a Prime Force Organisation Slot with this Prime Advantage: gains an augury scanner; cannot select any of the Centurion's listed options and instead must have their bolter exchanged for one of the following options for Free: Heavy bolter, Autocannon, Iliastus assault cannon",
+                "hidden": false
               }
             ]
           },
@@ -121296,6 +121329,14 @@
                   }
                 ],
                 "conditions": [{"childId": "be98-aa9d-64ef-f62c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Unnatural Resilience",
+                "id": "b436-54d4-5a5b-629a",
+                "description": "This Prime Advantage can only be selected once per Army. A Model selected to fill a Prime Force Organisation Slot with this Prime Advantage: Has its Base Wounds Characteristic modified by +1. Gains the Eternal Warrior (2) Special Rule.",
+                "hidden": false
               }
             ]
           },
