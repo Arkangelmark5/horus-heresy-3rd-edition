@@ -247,6 +247,43 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "entryLinks": [
+          {
+            "name": "Breacher Charges",
+            "id": "7040-4e62-96fe-9d17",
+            "hidden": true,
+            "import": true,
+            "targetId": "01bd-4377-904c-6625",
+            "type": "selectionEntry",
+            "constraints": [{"id": "ccbe-d9db-1adc-246d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {"childId": "9871-cb62-5283-2216", "field": "selections", "includeChildSelections": true, "scope": "model", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "8045-89a4-76d4-fcef",
+                        "childName": "Sergeant Model Sub-Type",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "model",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "profiles": [
           {
             "name": "Boarding shield",
@@ -1319,10 +1356,10 @@
             "typeId": "5ec5-e0c3-1701-6f16",
             "typeName": "Wargear",
             "characteristics": [
-              {"name": "Summary", "$text": "Breacher charges can be used in Close Combat to \ndeal heavy damage to Fortifications.", "typeId": "8e7d-a0ae-fd85-983c"},
+              {"name": "Summary", "$text": "Breacher charges can be used in Close Combat to deal heavy damage to Fortifications.", "typeId": "8e7d-a0ae-fd85-983c"},
               {
                 "name": "Description",
-                "$text": "In Step 2 of the Fight Sub-Phase a Model with breacher charges that is part of a Combat where all enemy Units are composed entirely of Models with the Fortification or Building Type may have the breacher charges declared as the Weapon that Model will use in that Sub-Phase.\nA Model that has breacher charges selected as its Weapon always has a Combat Initiative of 0 and may only make a single attack. Any attacks made for such a Model automatically Hit and no Hit Test is made for them, each such Hit has a Strength of 10, an AP of – and a Damage of D3+3",
+                "$text": "In Step 2 of the Fight Sub-Phase a Model with breacher charges that is part of a Combat where all enemy Units are composed entirely of Models with the Fortification Type may have the breacher charges declared as the Weapon that Model will use in that Sub-Phase.\nA Model that has breacher charges selected as its Weapon always has a Combat Initiative of 0. Any attacks made for such a Model automatically Hit and no Hit Test is made for them, each such Hit has a Strength of 10, an AP of – and a Damage of D3+3",
                 "typeId": "9944-2f6d-d61b-03b5"
               }
             ]
