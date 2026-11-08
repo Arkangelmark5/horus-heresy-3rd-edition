@@ -11824,7 +11824,8 @@
                 ]
               }
             ]
-          }
+          },
+          {"name": "Irregulars", "id": "4365-888c-a37f-1ed8", "hidden": false, "targetId": "2d43-afcd-2393-d1bb", "type": "rule"}
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "3760-2dfb-561a-b603"}],
         "selectionEntries": [
