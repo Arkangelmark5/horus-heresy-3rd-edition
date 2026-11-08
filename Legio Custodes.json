@@ -465,7 +465,7 @@
         "categoryLinks": [{"name": "Retinue", "id": "d983-72aa-4ef4-22b1", "hidden": false, "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
       },
       {
-        "name": "Ephoroi Venetari Proconsul",
+        "name": "Ephoroi Venatari Proconsul",
         "id": "0c99-0cb8-9c84-8d23",
         "hidden": false,
         "import": true,
@@ -7101,7 +7101,7 @@
         ]
       },
       {
-        "name": "Ephoroi Venetari Proconsul",
+        "name": "Ephoroi Venatari Proconsul",
         "id": "882b-21b4-c4e9-5734",
         "hidden": false,
         "import": true,
