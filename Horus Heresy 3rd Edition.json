@@ -1034,10 +1034,10 @@
       {"name": "Troops - Infantry Troop or Levy Troop only", "id": "777c-2a47-2a20-153e", "hidden": false},
       {"name": "Support - Militia Medicae or Fire Support Troop only", "id": "c6d8-d70d-c56c-d801", "hidden": false},
       {"name": "Alignment mismatch", "id": "ee84-02b2-5444-e62b", "hidden": false},
-      {"name": "Command - Tzeench only", "id": "1cca-b725-743f-e851", "hidden": false},
-      {"name": "Troops - Tzeench only", "id": "5e69-359f-6bc1-6868", "hidden": false},
-      {"name": "Support - Tzeench only", "id": "8e14-b4d2-59c9-e474", "hidden": false},
-      {"name": "Fast Attack - Tzeench only", "id": "6bea-2cb9-c6b9-d183", "hidden": false},
+      {"name": "Command - Tzeentch only", "id": "1cca-b725-743f-e851", "hidden": false},
+      {"name": "Troops - Tzeentch only", "id": "5e69-359f-6bc1-6868", "hidden": false},
+      {"name": "Support - Tzeentch only", "id": "8e14-b4d2-59c9-e474", "hidden": false},
+      {"name": "Fast Attack - Tzeentch only", "id": "6bea-2cb9-c6b9-d183", "hidden": false},
       {"name": "Cohort Doctrine: Fateweaver Cohort", "id": "cb73-8d71-1d7a-cb1a", "hidden": false},
       {"name": "Prosperine Sorcerer", "id": "04b3-9ebe-bf51-20f2", "hidden": false},
       {"name": "Slaanesh", "id": "e7b7-e508-e6c9-58ba", "hidden": false},
@@ -40500,28 +40500,28 @@
                 "constraints": [{"id": "7ee1-d71f-5d85-30fd", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               },
               {
-                "name": "Command - Tzeench only",
+                "name": "Command - Tzeentch only",
                 "id": "8aee-fd73-9cb9-acc2",
                 "hidden": false,
                 "targetId": "1cca-b725-743f-e851",
                 "constraints": [{"id": "8687-618c-5efd-0823", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Troops - Tzeench only",
+                "name": "Troops - Tzeentch only",
                 "id": "e6c6-8666-523c-37b9",
                 "hidden": false,
                 "targetId": "5e69-359f-6bc1-6868",
                 "constraints": [{"id": "66ea-3d26-1cd4-ff32", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
               },
               {
-                "name": "Support - Tzeench only",
+                "name": "Support - Tzeentch only",
                 "id": "0ba6-fd96-0787-68a7",
                 "hidden": false,
                 "targetId": "8e14-b4d2-59c9-e474",
                 "constraints": [{"id": "b950-436d-689c-bae0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Fast Attack - Tzeench only",
+                "name": "Fast Attack - Tzeentch only",
                 "id": "f5a0-03bf-0c9a-323a",
                 "hidden": false,
                 "targetId": "6bea-2cb9-c6b9-d183",
@@ -40650,7 +40650,7 @@
                 "characteristics": [
                   {
                     "name": "Detachment Composition",
-                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeench Army list\nCommand Units do not grant additional Auxiliary Detachments",
+                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeentch Army list\nCommand Units do not grant additional Auxiliary Detachments",
                     "typeId": "ec3f-877b-f887-18b2"
                   }
                 ]
@@ -40685,28 +40685,28 @@
                 "constraints": [{"id": "f484-a9cb-5fe9-e797", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               },
               {
-                "name": "Command - Tzeench only",
+                "name": "Command - Tzeentch only",
                 "id": "5750-53c4-c99b-2f53",
                 "hidden": false,
                 "targetId": "1cca-b725-743f-e851",
                 "constraints": [{"id": "a8b7-c1b9-0fe2-2ae9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Troops - Tzeench only",
+                "name": "Troops - Tzeentch only",
                 "id": "4c0b-ccc5-f76e-d206",
                 "hidden": false,
                 "targetId": "5e69-359f-6bc1-6868",
                 "constraints": [{"id": "a6c9-f0b8-da6d-7c4f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
               },
               {
-                "name": "Support - Tzeench only",
+                "name": "Support - Tzeentch only",
                 "id": "946a-84cf-c060-7d60",
                 "hidden": false,
                 "targetId": "8e14-b4d2-59c9-e474",
                 "constraints": [{"id": "815a-0595-831f-11f4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Fast Attack - Tzeench only",
+                "name": "Fast Attack - Tzeentch only",
                 "id": "216a-66e2-860b-e802",
                 "hidden": false,
                 "targetId": "6bea-2cb9-c6b9-d183",
@@ -41014,7 +41014,7 @@
                 "characteristics": [
                   {
                     "name": "Detachment Composition",
-                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeench Army list\n",
+                    "$text": "1 Command\n2 Troops\n1 Support\n1 Fast Attack\nSlots in this detachment may only be filled with Units from the Daemons of Tzeentch Army list\n",
                     "typeId": "ec3f-877b-f887-18b2"
                   }
                 ]

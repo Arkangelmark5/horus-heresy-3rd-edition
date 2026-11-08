@@ -1590,7 +1590,7 @@
         "modifiers": [{"field": "category", "type": "set-primary", "value": "c6d8-d70d-c56c-d801"}]
       },
       {
-        "name": "Herald of Tzeench",
+        "name": "Herald of Tzeentch",
         "id": "9edc-9e46-da8d-9229",
         "hidden": false,
         "import": true,
@@ -1600,7 +1600,7 @@
         "modifiers": [{"field": "category", "type": "set-primary", "value": "1cca-b725-743f-e851"}, {"field": "category", "type": "remove", "value": "6dbf-654a-f06f-2d69"}]
       },
       {
-        "name": "Horrors of Tzeench",
+        "name": "Horrors of Tzeentch",
         "id": "a95e-7dbd-ee5a-c5fb",
         "hidden": false,
         "import": true,
@@ -1610,7 +1610,7 @@
         "modifiers": [{"field": "category", "type": "set-primary", "value": "5e69-359f-6bc1-6868"}]
       },
       {
-        "name": "Flamers of Tzeench",
+        "name": "Flamers of Tzeentch",
         "id": "4fbf-ab46-1f53-6e48",
         "hidden": false,
         "import": true,
@@ -1620,7 +1620,7 @@
         "modifiers": [{"field": "category", "type": "set-primary", "value": "8e14-b4d2-59c9-e474"}]
       },
       {
-        "name": "Screamers of Tzeench",
+        "name": "Screamers of Tzeentch",
         "id": "ef7d-1bd8-b502-1041",
         "hidden": false,
         "import": true,
@@ -1762,7 +1762,7 @@
       {
         "name": "Servants of the Empyrean",
         "id": "28e8-792e-175a-1e32",
-        "description": "All Models with this Special Rule gain the following\n\n\n- The Tzeench Trait\n- The Traitor Trait\n- A 6+ invulnerable Saving Throw against wounds inflicted by Perils of the Warp or a Weapon with the Psychic Trait\n\n\nIf a Model with this Special Rule has the Command Sub-Type they also gain the Psyker Trait and the Fateweaving Psychic Discipline. They may not be given any other Psychic Discipline.\n\n\nNote that due to the Rules associated with the Tzeench Trait, a Model with both the Tzeench and Psyker Traits gain the Fateweaver Psychic Discipline and maynot be given any other Psychic Discipline",
+        "description": "All Models with this Special Rule gain the following\n\n\n- The Tzeentch Trait\n- The Traitor Trait\n- A 6+ invulnerable Saving Throw against wounds inflicted by Perils of the Warp or a Weapon with the Psychic Trait\n\n\nIf a Model with this Special Rule has the Command Sub-Type they also gain the Psyker Trait and the Fateweaving Psychic Discipline. They may not be given any other Psychic Discipline.\n\n\nNote that due to the Rules associated with the Tzeentch Trait, a Model with both the Tzeentch and Psyker Traits gain the Fateweaver Psychic Discipline and may not be given any other Psychic Discipline",
         "hidden": false
       },
       {
@@ -1950,7 +1950,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "0d99-f470-be4f-bb88",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -2046,6 +2046,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "0fcb-f614-0e0e-5b12",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -2821,7 +2848,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "1690-ec6d-bc00-36a3",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -2971,6 +2998,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "238b-3d0a-6d90-f34d",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -3819,7 +3873,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "e3f6-e1a2-ffc3-69e4",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -3969,6 +4023,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "fe2c-5a28-e926-37e4",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -4755,7 +4836,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "fbe6-6ecb-158a-46df",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -4905,6 +4986,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "5c37-0d31-a00d-bcfa",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -5642,7 +5750,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "873f-1c53-681f-016e",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -5738,6 +5846,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "f614-404a-e317-7688",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -6440,7 +6575,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "3bcb-9844-96c7-9f3e",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -6586,6 +6721,33 @@
                         "value": 1
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "2810-de5d-a347-083d",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -7386,7 +7548,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "5da7-2d45-a5a7-dd68",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -7532,6 +7694,33 @@
                         "value": 1
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "d55b-1929-c9fd-5048",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -7936,7 +8125,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "849c-7351-822a-eb9d",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -8601,7 +8790,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "e308-ad84-3a6a-744e",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -9294,7 +9483,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "6fc1-8a70-a40f-e277",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -10254,7 +10443,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "aa68-9a25-3f11-01b6",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -10564,7 +10753,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "7940-f652-9265-38b2",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -10901,7 +11090,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "61eb-7ee7-801a-b4e1",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -12063,7 +12252,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "53ff-763a-f7fd-70bd",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -12416,7 +12605,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "8dd3-b0a3-2d0c-1105",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -13637,7 +13826,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "2561-b91d-a0e5-5cad",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -13958,7 +14147,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "44c8-859b-1e78-10ef",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -14287,7 +14476,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "975d-b8bd-495b-8362",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -15216,7 +15405,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "0c05-9fac-80bf-ce1b",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -15540,7 +15729,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "e5f5-942c-ee9a-48f8",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -15939,7 +16128,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "01cd-3420-ee96-c84a",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -16376,7 +16565,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "ad69-2b8c-1e17-7528",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -16900,7 +17089,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "08a4-c39d-1b3f-0e50",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -17356,7 +17545,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "0066-9890-8a98-e866",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -19512,7 +19701,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "a71d-e870-dc72-ff78",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -19945,7 +20134,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "5724-c422-caf1-b839",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -20393,7 +20582,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "561f-ad17-1255-b22f",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -20420,7 +20609,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "9ecb-97f5-31a2-d958",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -20882,7 +21071,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "7105-93c7-f7a1-8e65",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -21344,7 +21533,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "bcd6-9cf5-2bee-86b2",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -21789,7 +21978,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "c5ff-0750-428f-7ce2",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -22692,7 +22881,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "b3b5-1270-f631-517a",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -23072,7 +23261,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "220c-0890-52af-8e75",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -23368,7 +23557,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "5f50-9e51-365b-d357",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -23518,6 +23707,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "b0e3-52d1-9557-67b4",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24290,7 +24506,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "7e2e-a497-6a8d-5094",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -24467,6 +24683,33 @@
                   {
                     "childId": "6624-90cd-fbeb-7a2a",
                     "childName": "Cohort Doctrine: Sublime Cohort",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of Fates",
+            "id": "6e95-fbde-1553-71c6",
+            "hidden": false,
+            "targetId": "a0ce-c0f1-280f-d8d8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "88af-1dcd-1e95-1f6e",
+                    "childName": "Cohort Doctrine: Fateweaver Cohort",
                     "field": "selections",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25103,7 +25346,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "890f-a60b-f94f-f975",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -25498,7 +25741,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "ca64-e1a2-e395-264f",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -26021,7 +26264,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "6f64-63e0-f3f6-d164",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -26357,7 +26600,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "cbd0-53f4-e355-f497",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -26685,7 +26928,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "09ea-fd39-1df2-1d4a",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -27042,7 +27285,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "fc19-f1b2-31d6-319f",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -27585,7 +27828,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "d956-e11d-90b1-2284",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -27974,7 +28217,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "8742-cccf-4c1a-f5fa",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -28436,7 +28679,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "525a-5567-5fdd-b15d",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -28927,7 +29170,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "003a-5144-ce72-76a8",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -29442,7 +29685,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "e2ab-7dd1-c72d-5f3b",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -29911,7 +30154,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "caaf-5d46-6eb5-cdf9",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -30414,7 +30657,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "d7a6-0ee4-51bf-e235",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -30772,7 +31015,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "abdb-c57a-6856-fdbb",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -32517,7 +32760,7 @@
             ]
           },
           {
-            "name": "Tzeench",
+            "name": "Tzeentch",
             "id": "fb4a-ff25-678e-22b6",
             "hidden": true,
             "targetId": "445c-dc68-019d-79d8",
@@ -34251,7 +34494,7 @@
                   }
                 ],
                 "infoLinks": [
-                  {"name": "Tzeench", "id": "1f67-c13b-56d4-86da", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
+                  {"name": "Tzeentch", "id": "1f67-c13b-56d4-86da", "hidden": false, "targetId": "445c-dc68-019d-79d8", "type": "profile"},
                   {
                     "name": "Psyker",
                     "id": "67ca-6198-0eea-6e54",

@@ -6865,7 +6865,7 @@
             ]
           },
           {
-            "name": "Signifier",
+            "name": "Signifer",
             "id": "3dee-1562-86cd-c1fb",
             "hidden": false,
             "import": true,
@@ -6906,7 +6906,7 @@
             ],
             "profiles": [
               {
-                "name": "Signifier",
+                "name": "Signfier",
                 "id": "93f5-3afb-048a-ec90",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
