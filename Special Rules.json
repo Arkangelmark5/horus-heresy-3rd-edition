@@ -16,7 +16,7 @@
       {
         "name": "Interdiction Cadres",
         "id": "a752-1dc3-403e-9336",
-        "description": "All Models in a Unit selected to fill a Prime Force Organization with this Prime Advantage gain the Concealed Positions and Expendable(1) Special Rules.",
+        "description": "All Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Concealed Positions and Expendable (1) Special Rules.",
         "hidden": false
       },
       {
@@ -851,7 +851,7 @@
       {
         "name": "Repair Automata",
         "id": "1394-90c6-4f63-e2ed",
-        "description": "**A Unit that includes Models with this Special Rule may attempt to repair certain Models as if it was a single Model with the Battlesmith (X) Special Rule.**\n\nA Unit that includes one of more Models with this Special Rule may be used to activate the Battlesmith (X) Special Rule as if it was a single Model with that Special Rule. When activating the Battlesmith (X) Special Rule for a Unit that includes one of more Models with the Repair Automata Special Rule, select one Model in the Unit with the Repair Automata Special Rule to be the Acting Model and determine the value of X for this use of the Battlesmith (X) Special Rule based on the number of Models in the Unit with the Repair Automata Special Rule using the table below:\n\nNumber of Models = Value of X\n1-4 = 1\n5-8 = 2\n9-12 = 3",
+        "description": "**A Unit that includes Models with this Special Rule may attempt to repair certain Models as if it was a single Model with the Battlesmith (X) Special Rule.**\n\nA Unit that includes one or more Models with this Special Rule may be used to activate the Battlesmith (X) Special Rule as if it was a single Model with that Special Rule. When activating the Battlesmith (X) Special Rule for a Unit that includes one or more Models with the Repair Automata Special Rule, select one Model in the Unit with the Repair Automata Special Rule to be the Acting Model and determine the value of X for this use of the Battlesmith (X) Special Rule based on the number of Models in the Unit with the Repair Automata Special Rule using the table below:\n\nNumber of Models = Value of X\n1-4 = 1\n5-8 = 2\n9-12 = 3",
         "hidden": false
       },
       {
@@ -1294,13 +1294,13 @@
       {
         "name": "Hedonists",
         "id": "9b7e-edb4-353c-3a3e",
-        "description": "**Models with this Special Rule gain or improve Line (X) when nearby enemy Units are affected by Tactical Statuses.**\n\n\nAt the start of each of their Victory Sub-phases as the Active Player, the Controlling Player may nominate one Friendly Unit that contains only Models with this Special Rule. For each Tactical Status, either Pinned, Stunned, Suppressed or Routed that is applied to any enemy Unit that is within 18\" and Line of Sight of the nominated Friendly Unit and does not have the Vehicle Type, the nominated Friendly Unit loses any variant of the Vanguard (X) Special Rule and gains the Line (1) Special Rule for the duration of the Victory Sub-Phase, or modifies the value of any variant of the Line (X) Special Rule that they have by +1, to a maximum of Line (3).",
+        "description": "**Models with this Special Rule gain or improve Line (X) when nearby enemy Units are affected by Tactical Statuses.**\n\n\nAt the start of each of their Victory Sub-phases as the Active Player, the Controlling Player may nominate one Friendly Unit that contains only Models with this Special Rule. For each Tactical Status, either Pinned, Stunned, Suppressed or Routed that is applied to any enemy Unit that is within 18\" and Line of Sight of the nominated Friendly Unit and does not have the Vehicle Type, the nominated Friendly Unit loses any variant of the Vanguard (X) Special Rule and gains the Line (1) Special Rule for the duration of the Victory Sub-Phase, or modifies the value of any variant of the Line (X) Special Rule that they have to a maximum of Line (3).",
         "hidden": false
       },
       {
         "name": "Soporific Musk",
         "id": "cdb4-49d4-88d7-a2c6",
-        "description": "**Enemy Units in Combat with a Unit with this Special Rule must pass a Willpower Check before having an Aftermath option selected for them.**\n\n\nIf a Combat includes any Models with this Special Rule, the Controlling Player may choose that the Opposing Player must make a Willpower Check for each of their Units in the selected Combat, before selecting any Aftermath option for the Unit. If the Willpower Check is passed, the Player may select an Aftermath option as normal. If the Willpower Check is failed, the Player must select Hold. Note that if a Unit contains any Models with the Routed status, a Willpower Check must still be made for that Unit. If the Check is passed, the Unit must Fall Back and if the Check is failed the Unit must Hold, but the Models retain the Routed Status, regardless of the result.",
+        "description": "**Enemy Units in Combat with a Unit with this Special Rule must pass a Willpower Check before having an Aftermath option selected for them.**\n\n\nIf a Combat includes any Models with this Special Rule, the Controlling Player may choose that the Opposing Player must make a Willpower Check for each of their Units in the selected Combat, before selecting any Aftermath option for that Unit. If the Willpower Check is passed, the Player may select an Aftermath option as normal. If the Willpower Check is failed, the Player must select Hold. Note that if a Unit contains any Models with the Routed status, a Willpower Check must still be made for that Unit. If the Check is passed, the Unit must Fall Back and if the Check is failed the Unit must Hold, but the Models retain the Routed Status, regardless of the result.",
         "hidden": false
       }
     ],

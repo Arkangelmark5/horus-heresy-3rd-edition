@@ -379,7 +379,7 @@
               {
                 "name": "Sire of the Space Wolves",
                 "id": "1f8c-a65b-9273-aec3",
-                "description": "If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:\n\n\n• If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Grey Slayer Pack Units, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.\n\n\nFurthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry and Primarch Type with the Space Wolves Trait in the same Army:\n\n\n• Until the end of the first Battle Turn of the Battle, all Models in this Army with the Infantry Type and the Space Wolves Trait have the Move Through Covers Special Rule.",
+                "description": "If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:\n\n\n• If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Grey Slayer Pack Units, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.\n\n\nFurthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry and or Paragon Type with the Space Wolves Trait in the same Army:\n\n\n• Until the end of the first Battle Turn of the Battle, all Models in this Army with the Infantry Type and the Space Wolves Trait have the Move Through Cover Special Rule.",
                 "hidden": false,
                 "publicationId": "b905-0414-1057-bb34"
               }
@@ -947,7 +947,7 @@
                   {"name": "SM", "$text": "S", "typeId": "4505-de6f-d4ae-6280"},
                   {"name": "AP", "$text": "3", "typeId": "a014-126b-3b7b-27e8"},
                   {"name": "D", "$text": "1", "typeId": "6a9d-4feb-065a-33e7"},
-                  {"name": "Special Rules", "$text": "Breaching (4+), Shred(5+)", "typeId": "ebe0-7b28-b40c-694e"},
+                  {"name": "Special Rules", "$text": "Breaching (4+), Shred (5+)", "typeId": "ebe0-7b28-b40c-694e"},
                   {"name": "Traits", "$text": "Power", "typeId": "76e3-c188-bc65-3467"}
                 ]
               }
