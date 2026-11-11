@@ -5319,7 +5319,7 @@
             "hidden": false,
             "targetId": "b6b3-909a-b78a-3dbf",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "set", "value": "Ordinance (D)"}]
+            "modifiers": [{"field": "name", "type": "set", "value": "Ordnance (D)"}]
           },
           {
             "name": "Suppressive (X)",

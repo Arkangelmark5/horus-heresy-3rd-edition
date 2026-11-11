@@ -35,7 +35,7 @@
               {"name": "Summary", "$text": "A Model with this Wargear can enable other Deep Striking Units to arrive more reliably.", "typeId": "8e7d-a0ae-fd85-983c"},
               {
                 "name": "Description",
-                "$text": "Reserves Tests made for a Unit that contains any Models with a strato-vox are automatically successful. While any Models with a strato-vox are on the Battlefield, before making a Reserves Test for a Unit in Reserves that only includes Models with the Deep Strike Special Rule, the Controlling Player can choose to activate that strato-vox. lf they do, that Reserves Test is automatically successful, but the Unit it was made for must make a Deep Strike instead of deploying normally.",
+                "$text": "Reserves Tests made for a Unit that contains any Models with a strato-vox are automatically successful. While any Models with a strato-vox are on the Battlefield, before making a Reserves Test for a Unit in Reserves that only includes Models with the Deep Strike Special Rule, the Controlling Player can choose to activate that strato-vox. If they do, that Reserves Test is automatically successful, but the Unit it was made for must make a Deep Strike instead of deploying normally.",
                 "typeId": "9944-2f6d-d61b-03b5"
               }
             ]
@@ -674,7 +674,7 @@
               {"name": "Summary", "$text": "\"A Model with a rad furnace reduces the enemy's Toughness while Locked in Combat.\"", "typeId": "8e7d-a0ae-fd85-983c"},
               {
                 "name": "Description",
-                "$text": "Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.",
+                "$text": "Any model, friendly or enemy, that is part of a Combat that includes one or more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.",
                 "typeId": "9944-2f6d-d61b-03b5"
               }
             ]

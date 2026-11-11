@@ -1287,7 +1287,7 @@
                 "hidden": false,
                 "targetId": "b094-0b64-eb57-aed6",
                 "type": "rule",
-                "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+"}]
+                "modifiers": [{"field": "name", "type": "set", "value": "Breaching (6+)"}]
               },
               {
                 "name": "Reaping Blow (X)",

@@ -734,7 +734,7 @@
               },
               {
                 "name": "Effect",
-                "$text": "If the Active Player has a Model with the Command Sub-Type within 3\" of the centre of a Strategic Cogitator Array Marker at the end of their Movement Phase, they can request new orders. If they do so, that Player rolls one Dice. If the result is higher than the current Battle Turn number, the request is successful and that Player may select one Secondary Objective in use in that Battle and increate the value of X on that Secondary Objective by 1, and then the Strategic Cogitator Array Marker is removed from the Battlefield. Each Model with the Command Sub-Type can only request new orders once per Turn, and each Secondary Objective can only have its value increased once in this manner",
+                "$text": "If the Active Player has a Model with the Command Sub-Type within 3\" of the centre of a Strategic Cogitator Array Marker at the end of their Movement Phase, they can request new orders. If they do so, that Player rolls one Dice. If the result is higher than the current Battle Turn number, the request is successful and that Player may select one Secondary Objective in use in that Battle and increase the value of X on that Secondary Objective by 1, and then the Strategic Cogitator Array Marker is removed from the Battlefield. Each Model with the Command Sub-Type can only request new orders once per Turn, and each Secondary Objective can only have its value increased once in this manner",
                 "typeId": "bbd3-5482-ed3a-a3b3"
               },
               {"name": "How To Destroy", "$text": "Removed when used successfully (see above).", "typeId": "6888-e488-df3f-edcf"},

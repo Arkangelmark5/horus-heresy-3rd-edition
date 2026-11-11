@@ -641,7 +641,7 @@
           },
           {
             "name": "Cost",
-            "$text": "The Reactive Player must spend 1 point of their Reaction Allotmentto declare a Battlelust Advanced Reaction.",
+            "$text": "The Reactive Player must spend 1 point of their Reaction Allotment to declare a Battlelust Advanced Reaction.",
             "typeId": "954a-972f-5c94-2ede"
           },
           {
@@ -1889,7 +1889,7 @@
               {
                 "name": "Champion of the Dominion",
                 "id": "8841-ea90-e750-bbd6",
-                "description": "During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, it must be declared as the Challenger or to accept a Challenge. If more than on Model with this Special Rule is eligible to be the Challenger or to accept a Challenge, the Controlling Player may select which one will be declared as the Challenger or to accept a Challenge.\n\n\nAdditionally, if a Model with this Special Rule would gain the Disgraced Status, it instead suffers automatic wounds as per the Malefic Sub-Type, but these wounds must be allocated to the Model with this Special Rule, and cannot be allocated to Models in any Unit it may have joined.",
+                "description": "During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, it must be declared as the Challenger or to accept a Challenge. If more than one Model with this Special Rule is eligible to be the Challenger or to accept a Challenge, the Controlling Player may select which one will be declared as the Challenger or to accept a Challenge.\n\n\nAdditionally, if a Model with this Special Rule would gain the Disgraced Status, it instead suffers automatic wounds as per the Malefic Sub-Type, but these wounds must be allocated to the Model with this Special Rule, and cannot be allocated to Models in any Unit it may have joined.",
                 "hidden": false
               }
             ],
@@ -4798,7 +4798,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Cor'bax Untterblight",
+            "name": "Cor'bax Utterblight",
             "id": "8e3d-af3b-7253-0450",
             "hidden": false,
             "import": true,
@@ -4829,7 +4829,7 @@
             ],
             "profiles": [
               {
-                "name": "Cor'bax Untterblight",
+                "name": "Cor'bax Utterblight",
                 "id": "6526-e789-f2c2-939b",
                 "hidden": false,
                 "typeId": "a76f-8e23-8c3e-166d",
@@ -9362,7 +9362,7 @@
               {
                 "name": "Encroaching Ruin",
                 "id": "efc2-b62a-b43a-0cf0",
-                "description": "A Model with this Trait gains the Deep Strike Special Rule and the Desecrators Special Rule. Additionally, a Model with this Ætheric Dominion Trait that has the Command or Champion Sub-Type may be given the Psyker Trait and have up to two of the following Psychic Disciplines selected for it:\n\n\n- Pyromancy for +10 Points per Model\n- Telekenisis for +20 Points per Model\n- Divination for +20 Points per Model",
+                "description": "A Model with this Trait gains the Deep Strike Special Rule and the Desecrators Special Rule. Additionally, a Model with this Ætheric Dominion Trait that has the Command or Champion Sub-Type may be given the Psyker Trait and have up to two of the following Psychic Disciplines selected for it:\n\n\n- Pyromancy for +10 Points per Model\n- Telekinesis for +20 Points per Model\n- Divination for +20 Points per Model",
                 "hidden": false
               }
             ],
@@ -9474,7 +9474,7 @@
               {
                 "name": "Heedless Slaughter",
                 "id": "cf9f-01ff-b2a2-c8ae",
-                "description": "A Model with this Trait gains the Desecrators Special Rule. Additionally, any Unit that contains one of more Models with this Trait can never be the Focus nor the Target of a Psychic Blessing or Psychic Curse.",
+                "description": "A Model with this Trait gains the Desecrators Special Rule. Additionally, any Unit that contains at least one Model with this Trait can never be the Focus nor the Target of a Psychic Blessing or Psychic Curse.",
                 "hidden": false
               }
             ]

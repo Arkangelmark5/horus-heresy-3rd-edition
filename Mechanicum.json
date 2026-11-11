@@ -17323,7 +17323,7 @@
               {
                 "name": "Battlefield Orphans",
                 "id": "55bc-6f50-a88c-cb24",
-                "description": "All Models in the unit selected to fill the Prime Slot must begin the Battle in Reserves and gain the Cortex Corruption and Expendable(1) Special Rules. When a Unit selected to fill this Prime Slot is deployed on the Battlefield, modify the Base Weapon Skill and Ballistic Skill Characteristics of all Models in the Unit by +1, to a maximum of 4, and the Base Toughness Characteristic of all Models in the Unit by -1. At the end of the last turn of a Battle, in the Effects Sub-Phase of the final End Phase, all Models from a Unit selected to fill thus Prime Slot are Removed as Casualties.",
+                "description": "All Models in the unit selected to fill the Prime Slot must begin the Battle in Reserves and gain the Cortex Corruption and Expendable (1) Special Rules. When a Unit selected to fill this Prime Slot is deployed on the Battlefield, modify the Base Weapon Skill and Ballistic Skill Characteristics of all Models in the Unit by +1, to a maximum of 4, and the Base Toughness Characteristic of all Models in the Unit by -1. At the end of the last turn of a Battle, in the Effects Sub-Phase of the final End Phase, all Models from a Unit selected to fill thus Prime Slot are Removed as Casualties.",
                 "hidden": false
               }
             ]
