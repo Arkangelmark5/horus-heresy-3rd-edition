@@ -42401,6 +42401,18 @@
                 "constraints": [{"id": "af81-0323-b509-ccee", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               }
             ],
+            "constraints": [
+              {
+                "id": "086a-cc84-f792-c3f3",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
               {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
@@ -42606,6 +42618,234 @@
                   {
                     "name": "Detachment Composition",
                     "$text": "1 High Command\n2 Command (1 Prime)\n3 Retinue\n5 Heavy Assault (1 Prime)\n5 Elite (1 Prime)\nFor each Retinue, Heavy Assault or Elites Battlefield Role Slot filled, one Heavy Transport Slot may be added to this Detachment.\nWhen adding a Unit in this Detachment to an Army Roster, all Models in that Unit with the Vanguard (X) Special Rule may have it exchanged for the Line (1) Special Rule. \n\n\nRestrictions\nAn Army using this Primary Detachment must include at least one Model with the Master of the Legion Trait.\nPrime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected. \nOnly the following additional Detachments may be selected:- \n• Officer Cadre\n• Shock Assault\n• Heavy Support\n• Warlord  \n• Lord of War (may only be used to select Models with the Transport Sub-Type)\n\n\nEach time a Unit with the Elites or Heavy Assault Battlefield Roles in an Army with this Primary Detachment is Destroyed, the Controlling Player’s Opponent scores 1 Victory Point.",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Primary - Fury of the Ancients",
+            "id": "d0e2-3466-3567-4bcf",
+            "hidden": true,
+            "sortIndex": 1,
+            "constraints": [
+              {
+                "id": "b0bb-efbd-35bb-e6f6",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "comment": "Legions Only",
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Primary - Fury of the Ancients",
+                "id": "b673-2b05-33b3-87c9",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 High Command\n2 Command (1 Prime)\n1 Retinue\n10 War Engine (2 Prime)\n\n\nPrime Slots in this Detachment may have the Ancient of War Prime Advantage selected for them. \n\n\nRestrictions\n• Models with the Command and Specialist Sub-Types may only be selected if they also have the Battlesmith (X) Special Rule.\n• Prime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected, unless that Battlefield Role is War-engine. \n• Only the following additional Detachments may be selected:\n- Techmarine Covenant\n- Heavy Support\n- Lord of War (may only be used to select Models with the Transport Sub-Type)\n\n\n• Each time a Unit with the War-engine Battlefield Role in an Army with this Primary Detachment is Destroyed, the Controlling Player’s Opponent scores 1 Victory Point.",
                     "typeId": "ec3f-877b-f887-18b2"
                   }
                 ]
