@@ -1048,7 +1048,14 @@
       {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false},
       {"name": "Lord of War - Transports only", "id": "657f-b4bf-b1bc-02e7", "hidden": false},
       {"name": "Command - with Battlesmith (X) only", "id": "d4c0-6b33-adf5-aa41", "hidden": false},
-      {"name": "High Command - with Battlesmith (X) only", "id": "10fd-793f-8c01-ecc2", "hidden": false}
+      {"name": "High Command - with Battlesmith (X) only", "id": "10fd-793f-8c01-ecc2", "hidden": false},
+      {"name": "Golden Keshig", "id": "cd90-d500-c550-b899", "hidden": false},
+      {"name": "Elites - Golden Keshig only", "id": "2425-4123-aa05-0c0e", "hidden": false},
+      {"name": "Support - Kyzagan Assault Speeder Units only", "id": "47de-e0a7-79d6-d1ad", "hidden": false},
+      {"name": "High Command - Anti-grav or Flyer only", "id": "9b6f-016a-7a59-a578", "hidden": false},
+      {"name": "Command - Anti-grav or Flyer only", "id": "433f-3f36-42c3-4662", "hidden": false},
+      {"name": "Retinue - Anti-grav or Flyer only", "id": "0120-2fcf-0485-c7cb", "hidden": false},
+      {"name": "Fast Attack - Anti-grav or Flyer only", "id": "a503-4496-9240-89bc", "hidden": false}
     ],
     "costTypes": [
       {
@@ -43500,6 +43507,388 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Primary - Sky-Hunter Phalanx",
+            "id": "04d9-b191-7ea7-d461",
+            "hidden": true,
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "High Command - Anti-grav or Flyer only",
+                "id": "da8a-3c95-3d76-5ccb",
+                "hidden": false,
+                "targetId": "9b6f-016a-7a59-a578",
+                "constraints": [{"id": "cca8-5aff-4444-b409", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime High Command",
+                "id": "38a8-7f07-cf0d-8ebe",
+                "hidden": false,
+                "targetId": "3568-ad75-b452-3137",
+                "constraints": [{"id": "b48d-93e9-6950-8db9", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Anti-grav or Flyer only",
+                "id": "7d3f-f337-c832-bd49",
+                "hidden": false,
+                "targetId": "433f-3f36-42c3-4662",
+                "constraints": [{"id": "fdb9-a836-a0f1-968b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "168b-3ffa-df80-2d36",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true,
+                "constraints": [{"id": "fae9-b58f-dc7e-0014", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Retinue - Anti-grav or Flyer only",
+                "id": "948f-ba97-d74a-6729",
+                "hidden": false,
+                "targetId": "0120-2fcf-0485-c7cb",
+                "constraints": [{"id": "53a1-89cd-4c86-d45d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+                "modifiers": [
+                  {
+                    "field": "53a1-89cd-4c86-d45d",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "2425-4123-aa05-0c0e",
+                        "childName": "Elites - Golden Keshig only",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Prime Retinue",
+                "id": "b2fb-94a5-0d1f-aff9",
+                "hidden": false,
+                "targetId": "c66b-ef39-b20f-725b",
+                "constraints": [{"id": "b5f2-12aa-2efa-e79b", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Fast Attack - Anti-grav or Flyer only",
+                "id": "9139-0265-ae41-f9b1",
+                "hidden": false,
+                "targetId": "a503-4496-9240-89bc",
+                "constraints": [{"id": "8e55-4867-33bb-1ad0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "8e55-4867-33bb-1ad0",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "47de-e0a7-79d6-d1ad",
+                        "childName": "Support - Kyzagan Assault Speeder Units only",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Prime Fast Attack",
+                "id": "48ad-6bfc-2328-5e40",
+                "hidden": false,
+                "targetId": "c291-144b-3da6-37ed",
+                "tracked": true,
+                "constraints": [{"id": "1768-f82f-541d-4700", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Elites - Golden Keshig only",
+                "id": "afca-0d47-1a24-3a2f",
+                "hidden": false,
+                "targetId": "2425-4123-aa05-0c0e",
+                "constraints": [{"id": "496b-5c3e-558b-3b14", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+                "modifiers": [
+                  {
+                    "field": "496b-5c3e-558b-3b14",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "0120-2fcf-0485-c7cb",
+                        "childName": "Retinue - Anti-grav or Flyer only",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Support - Kyzagan Assault Speeder Units only",
+                "id": "a22e-9aef-aaf8-57b3",
+                "hidden": false,
+                "targetId": "47de-e0a7-79d6-d1ad",
+                "constraints": [{"id": "cfd3-e0c3-cb87-8c1d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "cfd3-e0c3-cb87-8c1d",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "a503-4496-9240-89bc",
+                        "childName": "Fast Attack - Anti-grav or Flyer only",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "id": "d424-ebb7-a05f-5e5f",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Primary - Sky-Hunter Phalanx",
+                "id": "5bb3-6072-480d-c258",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 High Command\n2 Command (1 Prime)\n2 Retinue\n10 Fast Attack (2 Prime)\n\n\nPrime Slots in this Detachment may have the Skilled Riders Prime Advantage selected for them. \nIf this Detachment is from the White Scars Faction:\n- Any number of Retinue Slots may each be exchanged for one Elites Slot that may only be filled with Golden Keshig Units.\n- Any number of Fast Attack Slots may each be exchanged for one Support Slot that may only be filled with Kyzagan Assault Speeder Units. \n\n\nRestrictions\n• Prime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected. \n• Only the following additional Detachments may be selected:\n- First Strike\n- Combat Pioneer\n- Lord of War\n• Every Unit in an Army with this Primary Detachment must only include Models with the Antigrav or Flyer Sub-Type or begin the Battle Embarked on a Transport with the Flyer Sub-Type. Any other Units may not be Deployed and are Removed as Casualties. ",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "forceEntryLinks": [
@@ -62933,6 +63322,17 @@
                         "shared": true,
                         "type": "equalTo",
                         "value": 0
+                      },
+                      {
+                        "childId": "04d9-b191-7ea7-d461",
+                        "childName": "Primary - Sky-Hunter Phalanx",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
                       }
                     ]
                   }
@@ -63001,6 +63401,17 @@
                       {
                         "childId": "d0e2-3466-3567-4bcf",
                         "childName": "Primary - Fury of the Ancients",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "04d9-b191-7ea7-d461",
+                        "childName": "Primary - Sky-Hunter Phalanx",
                         "field": "forces",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -63352,6 +63763,17 @@
                           {
                             "childId": "d0e2-3466-3567-4bcf",
                             "childName": "Primary - Fury of the Ancients",
+                            "field": "forces",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "04d9-b191-7ea7-d461",
+                            "childName": "Primary - Sky-Hunter Phalanx",
                             "field": "forces",
                             "includeChildForces": true,
                             "includeChildSelections": true,

@@ -155,7 +155,27 @@
         "import": true,
         "targetId": "cbdd-c447-4b61-8778",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "31ba-128b-d50c-372a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "31ba-128b-d50c-372a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "433f-3f36-42c3-4662",
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Jorlund Hunter Pack",
@@ -191,7 +211,27 @@
         "import": true,
         "targetId": "9db5-7da3-4df4-b9c0",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "dea4-c3c3-4595-0ea5", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "dea4-c3c3-4595-0ea5", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "433f-3f36-42c3-4662",
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Speaker Of The Dead In Terminator Armour",
@@ -5104,9 +5144,32 @@
                 "flatten": true,
                 "hidden": false,
                 "sortIndex": 1,
-                "constraints": [{"id": "7211-4315-5efd-d33e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "constraints": [
+                  {"id": "7211-4315-5efd-d33e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "268e-f025-2046-4175", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
+                ],
                 "entryLinks": [
                   {"name": "Jump Pack", "id": "1535-8135-b64f-f516", "hidden": false, "import": true, "sortIndex": 1, "targetId": "9e29-3097-e7b7-8f26", "type": "selectionEntry"}
+                ],
+                "modifiers": [
+                  {
+                    "field": "268e-f025-2046-4175",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "04d9-b191-7ea7-d461",
+                        "childName": "Primary - Sky-Hunter Phalanx",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
                 ]
               }
             ]
