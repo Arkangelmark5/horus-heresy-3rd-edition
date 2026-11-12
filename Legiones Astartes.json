@@ -124313,6 +124313,64 @@
                 "hidden": false
               }
             ]
+          },
+          {
+            "name": "Skilled Riders",
+            "id": "8dc4-a804-86e1-2d90",
+            "hidden": true,
+            "import": true,
+            "type": "upgrade",
+            "infoLinks": [
+              {
+                "name": "Shrouded (X)",
+                "id": "6381-fa63-4f06-d165",
+                "comment": "6+",
+                "hidden": false,
+                "targetId": "c7e7-3bad-3de0-d6cc",
+                "type": "rule",
+                "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "6+"}]
+              },
+              {"name": "Move Through Cover", "id": "3e52-ecbe-ed4d-6928", "hidden": false, "targetId": "44d9-f20d-00bf-dc98", "type": "rule"}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "a073-2d4a-5bed-123e",
+                    "childName": "Cavalry Model Type",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Skilled Riders",
+                "id": "efb2-d439-d8fb-1a07",
+                "description": "Models with the Cavalry Type in a Unit selected to fi ll a Slot with this Prime Advantage gain the Shrouded (6+) and Move Through Cover Special Rules. ",
+                "hidden": false
+              }
+            ]
           }
         ]
       },
