@@ -1052,10 +1052,7 @@
       {"name": "Golden Keshig", "id": "cd90-d500-c550-b899", "hidden": false},
       {"name": "Elites - Golden Keshig only", "id": "2425-4123-aa05-0c0e", "hidden": false},
       {"name": "Support - Kyzagan Assault Speeder Units only", "id": "47de-e0a7-79d6-d1ad", "hidden": false},
-      {"name": "High Command - Anti-grav or Flyer only", "id": "9b6f-016a-7a59-a578", "hidden": false},
-      {"name": "Command - Anti-grav or Flyer only", "id": "433f-3f36-42c3-4662", "hidden": false},
-      {"name": "Retinue - Anti-grav or Flyer only", "id": "0120-2fcf-0485-c7cb", "hidden": false},
-      {"name": "Fast Attack - Anti-grav or Flyer only", "id": "a503-4496-9240-89bc", "hidden": false}
+      {"name": "Recon - Antigrav or Flyer only", "id": "9745-97d7-b05e-7b8a", "hidden": false}
     ],
     "costTypes": [
       {
@@ -4679,6 +4676,30 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -5204,6 +5225,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -5992,6 +6024,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -6612,6 +6655,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -7209,6 +7263,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -7491,18 +7558,38 @@
                     "field": "hidden",
                     "type": "set",
                     "value": true,
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "childId": "122b-0eda-4e29-401e",
-                        "field": "selections",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "04d9-b191-7ea7-d461",
+                            "childName": "Primary - Sky-Hunter Phalanx",
+                            "field": "forces",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
                       },
-                      {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "122b-0eda-4e29-401e",
+                            "field": "selections",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -7560,7 +7647,33 @@
                   }
                 ]
               },
-              {"name": "Paragon of Malevolence", "id": "d74e-66f2-0b58-f2e6", "hidden": false, "targetId": "708b-b2ff-1a14-2901"}
+              {"name": "Paragon of Malevolence", "id": "d74e-66f2-0b58-f2e6", "hidden": false, "targetId": "708b-b2ff-1a14-2901"},
+              {
+                "name": "Recon - Antigrav or Flyer only",
+                "id": "4d89-2275-0389-42e7",
+                "hidden": true,
+                "targetId": "9745-97d7-b05e-7b8a",
+                "constraints": [{"id": "6301-45c6-3b7b-065d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "04d9-b191-7ea7-d461",
+                        "childName": "Primary - Sky-Hunter Phalanx",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
@@ -8430,6 +8543,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -9877,6 +10001,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11546,6 +11681,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12373,6 +12519,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12708,6 +12865,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -17351,6 +17519,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -17724,6 +17903,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -18078,6 +18268,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18615,6 +18816,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -20290,6 +20502,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -20700,6 +20923,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21072,6 +21306,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21160,6 +21405,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21526,6 +21782,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21924,6 +22191,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22285,6 +22563,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22664,6 +22953,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -22785,6 +23085,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23153,6 +23464,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23529,6 +23851,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -23885,6 +24218,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24261,6 +24605,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24630,6 +24985,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24721,6 +25087,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25103,6 +25480,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25458,6 +25846,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25838,6 +26237,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25928,6 +26338,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26297,6 +26718,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26642,6 +27074,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27354,6 +27797,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -27891,6 +28345,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28538,6 +29003,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -29132,6 +29608,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -29569,6 +30056,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30223,6 +30721,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31015,6 +31524,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32887,6 +33407,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -35685,6 +36216,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -36420,6 +36962,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -37134,6 +37687,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -37752,6 +38316,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -39835,6 +40410,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -40449,6 +41035,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -40754,6 +41351,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -41180,6 +41788,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -42264,6 +42883,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -42556,6 +43186,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -43515,10 +44156,10 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "High Command - Anti-grav or Flyer only",
-                "id": "da8a-3c95-3d76-5ccb",
+                "name": "High Command",
+                "id": "a1f9-c91b-d647-bb85",
                 "hidden": false,
-                "targetId": "9b6f-016a-7a59-a578",
+                "targetId": "d9a6-9b5f-b18a-4d63",
                 "constraints": [{"id": "cca8-5aff-4444-b409", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
@@ -43529,10 +44170,10 @@
                 "constraints": [{"id": "b48d-93e9-6950-8db9", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               },
               {
-                "name": "Command - Anti-grav or Flyer only",
-                "id": "7d3f-f337-c832-bd49",
+                "name": "Command",
+                "id": "8ef5-0d3c-740e-075e",
                 "hidden": false,
-                "targetId": "433f-3f36-42c3-4662",
+                "targetId": "6dbf-654a-f06f-2d69",
                 "constraints": [{"id": "fdb9-a836-a0f1-968b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
               },
               {
@@ -43544,10 +44185,10 @@
                 "constraints": [{"id": "fae9-b58f-dc7e-0014", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
-                "name": "Retinue - Anti-grav or Flyer only",
-                "id": "948f-ba97-d74a-6729",
+                "name": "Retinue",
+                "id": "ca3c-3dc0-b572-69e1",
                 "hidden": false,
-                "targetId": "0120-2fcf-0485-c7cb",
+                "targetId": "a38e-50ff-310f-f19e",
                 "constraints": [{"id": "53a1-89cd-4c86-d45d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
                 "modifiers": [
                   {
@@ -43578,10 +44219,10 @@
                 "constraints": [{"id": "b5f2-12aa-2efa-e79b", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               },
               {
-                "name": "Fast Attack - Anti-grav or Flyer only",
-                "id": "9139-0265-ae41-f9b1",
+                "name": "Fast Attack",
+                "id": "da03-1520-e0c3-cc26",
                 "hidden": false,
-                "targetId": "a503-4496-9240-89bc",
+                "targetId": "cf96-8891-3f9a-8921",
                 "constraints": [{"id": "8e55-4867-33bb-1ad0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
                 "modifiers": [
                   {
@@ -43625,8 +44266,8 @@
                     "value": 1,
                     "repeats": [
                       {
-                        "childId": "0120-2fcf-0485-c7cb",
-                        "childName": "Retinue - Anti-grav or Flyer only",
+                        "childId": "a38e-50ff-310f-f19e",
+                        "childName": "Retinue",
                         "field": "selections",
                         "includeChildSelections": true,
                         "repeats": 1,
@@ -43652,8 +44293,8 @@
                     "value": 1,
                     "repeats": [
                       {
-                        "childId": "a503-4496-9240-89bc",
-                        "childName": "Fast Attack - Anti-grav or Flyer only",
+                        "childId": "cf96-8891-3f9a-8921",
+                        "childName": "Fast Attack",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -44171,6 +44812,17 @@
                   {
                     "childId": "d0e2-3466-3567-4bcf",
                     "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "04d9-b191-7ea7-d461",
+                    "childName": "Primary - Sky-Hunter Phalanx",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,

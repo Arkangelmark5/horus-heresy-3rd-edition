@@ -1818,10 +1818,7 @@
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [
-              {"id": "3084-522a-8981-60ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-              {"id": "1cb4-def9-4e99-fea8", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-            ],
+            "constraints": [{"id": "3084-522a-8981-60ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 10},
               {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
@@ -1836,23 +1833,6 @@
                 "type": "set",
                 "value": 0,
                 "conditions": [{"childId": "d929-8371-72d9-8cb4", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
-                "field": "1cb4-def9-4e99-fea8",
-                "type": "set",
-                "value": 1,
-                "conditions": [
-                  {
-                    "childId": "04d9-b191-7ea7-d461",
-                    "childName": "Primary - Sky-Hunter Phalanx",
-                    "field": "forces",
-                    "includeChildSelections": true,
-                    "scope": "force",
-                    "shared": true,
-                    "type": "instanceOf",
-                    "value": 1
-                  }
-                ]
               }
             ]
           }

@@ -235,26 +235,7 @@
         "import": true,
         "targetId": "9ae1-34b8-0b83-f1c5",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "4753-3066-5d61-3e66", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "9b6f-016a-7a59-a578",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "High Command", "id": "4753-3066-5d61-3e66", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
       },
       {
         "name": "Praetor in Terminator Armour",
@@ -318,27 +299,7 @@
         "import": true,
         "targetId": "3392-e93d-79bc-d648",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "11ac-806e-8290-2f6b", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "11ac-806e-8290-2f6b", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Esoterist",
@@ -408,24 +369,6 @@
                 "childId": "1da1-f220-0bad-5f78",
                 "field": "forces",
                 "includeChildForces": false,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -516,27 +459,7 @@
         "import": true,
         "targetId": "0c28-19c0-71b2-424e",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "a44b-4a66-359d-fb3f", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "a44b-4a66-359d-fb3f", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Tactical Squad",
@@ -570,23 +493,6 @@
             "type": "set-primary",
             "value": "af7b-1fc6-d5b1-0841",
             "conditions": [{"childId": "2e50-319d-ae62-a50c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "0120-2fcf-0485-c7cb",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
           }
         ]
       },
@@ -1091,26 +997,7 @@
         "import": true,
         "targetId": "06a4-3ae8-c5d2-aa1d",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "d64c-545f-7814-c1ce", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Fast Attack", "id": "d64c-545f-7814-c1ce", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
         "name": "Storm Eagle",
@@ -1119,26 +1006,7 @@
         "import": true,
         "targetId": "0816-621f-d49d-558c",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "598d-3354-d6c6-ce72", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Fast Attack", "id": "598d-3354-d6c6-ce72", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
         "name": "Fire Raptor",
@@ -1147,26 +1015,7 @@
         "import": true,
         "targetId": "3b08-d24a-c741-8daa",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "99b0-e12f-87d6-ecf1", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Fast Attack", "id": "99b0-e12f-87d6-ecf1", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
         "name": "Scimitar Jetbike Squadron",
@@ -1182,23 +1031,6 @@
             "type": "set-primary",
             "value": "eaec-7669-f5ba-3ad9",
             "conditions": [{"childId": "0f6e-3db8-8b6f-74e1", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
           }
         ]
       },
@@ -1209,26 +1041,7 @@
         "import": true,
         "targetId": "50f3-fca2-49ab-6de4",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "d9f3-1076-2c5a-01ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Fast Attack", "id": "d9f3-1076-2c5a-01ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
         "name": "Land Speeder Squadron",
@@ -1237,26 +1050,7 @@
         "import": true,
         "targetId": "7ebb-cdb2-017e-7c51",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "d57c-dca8-9b5c-b0ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "a503-4496-9240-89bc",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Fast Attack", "id": "d57c-dca8-9b5c-b0ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
       },
       {
         "name": "Sicaran",
@@ -1720,26 +1514,7 @@
         "import": true,
         "targetId": "26d7-23ba-4059-8079",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "089e-d3e4-6f20-0ea9", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "9b6f-016a-7a59-a578",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "High Command", "id": "089e-d3e4-6f20-0ea9", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
       },
       {
         "name": "Mounted Centurion",
@@ -1757,27 +1532,7 @@
         "import": true,
         "targetId": "bd23-f9fd-4dff-9202",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "54f5-7f0b-9ff6-99eb", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "54f5-7f0b-9ff6-99eb", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Librarian",
@@ -1804,27 +1559,7 @@
         "import": true,
         "targetId": "3ad9-c7af-4c97-b080",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "14dc-7ac9-f45a-0e91", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "14dc-7ac9-f45a-0e91", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Esoterist",
@@ -1851,27 +1586,7 @@
         "import": true,
         "targetId": "98fc-9124-4534-a3a3",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "8ce9-198d-8534-6921", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "8ce9-198d-8534-6921", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Legion Champion",
@@ -1898,27 +1613,7 @@
         "import": true,
         "targetId": "9bda-87be-40f6-8f53",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "eea7-ba31-a112-60f3", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "eea7-ba31-a112-60f3", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Chaplain",
@@ -1945,27 +1640,7 @@
         "import": true,
         "targetId": "7c0e-025f-41b5-b7d0",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "1589-4d2f-555b-a6f8", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "1589-4d2f-555b-a6f8", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Herald",
@@ -1992,27 +1667,7 @@
         "import": true,
         "targetId": "5be6-e4e6-4649-9a27",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "997b-5841-6d2c-632a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "997b-5841-6d2c-632a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Siege Breaker",
@@ -2039,27 +1694,7 @@
         "import": true,
         "targetId": "c956-a8ce-452d-99ca",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "511e-8ac4-51ec-f3b1", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "511e-8ac4-51ec-f3b1", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Master Of Signals",
@@ -2105,26 +1740,6 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
-          }
-        ],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
           }
         ]
       },
@@ -2208,27 +1823,7 @@
         "import": true,
         "targetId": "a9d2-eb7c-4e86-8e78",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "28db-4673-68d3-a58b", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "28db-4673-68d3-a58b", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Primus Medicae",
@@ -2255,27 +1850,7 @@
         "import": true,
         "targetId": "d45d-6c54-4dfc-92af",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "1b44-713b-f008-339a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "433f-3f36-42c3-4662",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Command", "id": "1b44-713b-f008-339a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
       },
       {
         "name": "Mounted Delegatus",
@@ -2396,26 +1971,7 @@
         "import": true,
         "targetId": "f28c-5af9-4645-b438",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Retinue", "id": "e128-615c-1b23-9da1", "primary": true, "targetId": "a38e-50ff-310f-f19e"}],
-        "modifiers": [
-          {
-            "field": "category",
-            "type": "set-primary",
-            "value": "0120-2fcf-0485-c7cb",
-            "conditions": [
-              {
-                "childId": "04d9-b191-7ea7-d461",
-                "childName": "Primary - Sky-Hunter Phalanx",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ]
-          }
-        ]
+        "categoryLinks": [{"name": "Retinue", "id": "e128-615c-1b23-9da1", "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
       },
       {
         "name": "Outrider Praetorian Command Squad",
@@ -13464,10 +13020,7 @@
                 "flatten": true,
                 "hidden": false,
                 "sortIndex": 2,
-                "constraints": [
-                  {"id": "c389-bbac-04c6-d997", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "fe62-794b-3c54-1383", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
+                "constraints": [{"id": "c389-bbac-04c6-d997", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
                     "name": "Corvid Pattern Jump Pack",
@@ -13535,23 +13088,6 @@
                     "type": "set",
                     "value": true,
                     "conditions": [{"childId": "da17-ab73-7d33-c76f", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
-                  },
-                  {
-                    "field": "fe62-794b-3c54-1383",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
                   }
                 ]
               },
@@ -31371,10 +30907,7 @@
                 "flatten": true,
                 "hidden": false,
                 "sortIndex": 2,
-                "constraints": [
-                  {"id": "2805-4d2f-709f-4c53", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "cf97-9a61-fe32-721e", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
+                "constraints": [{"id": "2805-4d2f-709f-4c53", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
                     "name": "Corvid Pattern Jump Pack",
@@ -31425,25 +30958,6 @@
                     ]
                   },
                   {"name": "Jump Pack", "id": "d898-0e73-427a-33ad", "hidden": false, "import": true, "sortIndex": 1, "targetId": "9e29-3097-e7b7-8f26", "type": "selectionEntry"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "cf97-9a61-fe32-721e",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
                 ]
               },
               {
@@ -32583,10 +32097,7 @@
                 "flatten": true,
                 "hidden": false,
                 "sortIndex": 2,
-                "constraints": [
-                  {"id": "5538-37e8-4527-4eaa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "ebd6-627b-d9d7-89c5", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
+                "constraints": [{"id": "5538-37e8-4527-4eaa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
                     "name": "Corvid Pattern Jump Pack",
@@ -32637,25 +32148,6 @@
                     ]
                   },
                   {"name": "Jump Pack", "id": "0a35-be0d-0ee9-be9f", "hidden": false, "import": true, "sortIndex": 1, "targetId": "9e29-3097-e7b7-8f26", "type": "selectionEntry"}
-                ],
-                "modifiers": [
-                  {
-                    "field": "ebd6-627b-d9d7-89c5",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
                 ]
               },
               {
@@ -86002,30 +85494,7 @@
                 "sortIndex": 2,
                 "targetId": "9e29-3097-e7b7-8f26",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "3978-1bd1-6922-0967", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "f20e-cb9f-d4d6-4432", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
-                "modifiers": [
-                  {
-                    "field": "f20e-cb9f-d4d6-4432",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
+                "constraints": [{"id": "3978-1bd1-6922-0967", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {
                 "name": "Legiones Thallaxes",
@@ -88170,30 +87639,7 @@
                 "sortIndex": 2,
                 "targetId": "9e29-3097-e7b7-8f26",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "9bd7-f2c0-b5bb-91de", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "1a18-c3b8-ea1f-e8b6", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
-                "modifiers": [
-                  {
-                    "field": "1a18-c3b8-ea1f-e8b6",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
+                "constraints": [{"id": "9bd7-f2c0-b5bb-91de", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               },
               {"name": "Prosperine Arcana", "id": "dbe3-a8c5-c494-f448", "hidden": false, "import": true, "targetId": "eafe-beb3-8d27-ec50", "type": "selectionEntryGroup"},
               {
@@ -90788,10 +90234,7 @@
                 "flatten": true,
                 "hidden": false,
                 "sortIndex": 2,
-                "constraints": [
-                  {"id": "33b5-ba72-1724-9417", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "00e0-1840-1efb-fab4", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
-                ],
+                "constraints": [{"id": "33b5-ba72-1724-9417", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
                     "name": "Corvid Pattern Jump Pack",
@@ -90819,24 +90262,6 @@
                     "type": "set",
                     "value": true,
                     "conditions": [{"childId": "da17-ab73-7d33-c76f", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
-                  },
-                  {
-                    "field": "00e0-1840-1efb-fab4",
-                    "type": "set",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
-                        "field": "forces",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
                   }
                 ]
               }
