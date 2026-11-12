@@ -1504,7 +1504,27 @@
             "hidden": false,
             "targetId": "530f-b733-993c-ec84",
             "type": "rule",
-            "modifiers": [{"comment": "3", "field": "name", "type": "set", "value": "Vanguard (3)"}]
+            "modifiers": [
+              {"comment": "3", "field": "name", "type": "set", "value": "Vanguard (3)"},
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           },
           {"name": "[Allegiance]", "id": "8838-553a-47ec-618e", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "[Legiones Astartes]", "id": "7b87-7365-0239-9a15", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"}
@@ -1928,6 +1948,79 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Vanguard or Line",
+            "id": "ffaa-c9de-bb14-79ac",
+            "defaultSelectionEntryId": "7337-788a-bc77-b503",
+            "hidden": true,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "22b1-8207-ab50-8a10", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f4c0-afd3-3b4e-18af", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Vanguard (3)",
+                "id": "c1ba-becb-f7b3-4031",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "constraints": [{"id": "2b4d-db09-a901-afc7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "infoLinks": [
+                  {
+                    "name": "Vanguard (X)",
+                    "id": "6269-0d78-1fc7-3ce8",
+                    "hidden": false,
+                    "targetId": "530f-b733-993c-ec84",
+                    "type": "rule",
+                    "modifiers": [{"field": "name", "type": "set", "value": "Vanguard (3)"}]
+                  }
+                ]
+              },
+              {
+                "name": "Line (1)",
+                "id": "650e-a99d-2a02-f18a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "constraints": [{"id": "e6f1-6879-a7a6-1b70", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "infoLinks": [
+                  {
+                    "name": "Line (X)",
+                    "id": "e836-fa65-d8f6-eb93",
+                    "hidden": false,
+                    "targetId": "1b5d-ceec-802a-c611",
+                    "type": "rule",
+                    "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
                   }
                 ]
               }
