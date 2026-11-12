@@ -66,6 +66,26 @@
         "categoryLinks": [
           {"name": "Salamanders", "id": "5149-edff-4a55-439a", "primary": false, "targetId": "f6fe-18f5-7b4d-b57a"},
           {"name": "High Command", "id": "7381-2829-dbd1-f81d", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
         ]
       },
       {

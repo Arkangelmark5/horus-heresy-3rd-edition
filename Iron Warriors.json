@@ -61,6 +61,26 @@
         "categoryLinks": [
           {"name": "High Command", "id": "d10c-750c-d061-b7d6", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"},
           {"name": "Iron Warriors", "id": "3ecb-9947-8273-6e64", "primary": false, "targetId": "b5d8-c965-7970-673f"}
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
         ]
       },
       {
@@ -94,7 +114,27 @@
         "import": true,
         "targetId": "269e-a6c3-41a0-8cc3",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "130b-4914-8536-c593", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "categoryLinks": [{"name": "High Command", "id": "130b-4914-8536-c593", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Nârik Dreygur",
@@ -103,7 +143,27 @@
         "import": true,
         "targetId": "42ce-6dde-4967-b87a",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "39d0-c97a-cf4c-0692", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "39d0-c97a-cf4c-0692", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Dominator Cohort",

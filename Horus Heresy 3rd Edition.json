@@ -5184,6 +5184,17 @@
                 ],
                 "conditions": [
                   {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
                     "field": "forces",
@@ -5963,6 +5974,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -6565,6 +6587,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -7777,6 +7810,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -8373,6 +8417,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -8975,6 +9032,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -9791,6 +9859,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11448,6 +11527,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -12263,6 +12355,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12587,6 +12690,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -17219,6 +17333,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -17581,6 +17706,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -17924,6 +18060,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18450,6 +18597,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -20114,6 +20272,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -20513,6 +20682,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -20874,6 +21054,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -20951,6 +21142,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21306,6 +21508,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21693,6 +21906,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22043,6 +22267,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22411,6 +22646,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -22521,6 +22767,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22878,6 +23135,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23243,6 +23511,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -23588,6 +23867,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23953,6 +24243,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24311,6 +24612,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24391,6 +24703,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24762,6 +25085,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25106,6 +25440,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25475,6 +25820,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25554,6 +25910,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25912,6 +26279,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26246,6 +26624,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26616,6 +27005,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26929,6 +27329,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27462,6 +27873,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28091,6 +28513,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29125,6 +29558,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -29761,6 +30205,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30542,6 +30997,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -32403,6 +32869,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -35190,6 +35667,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -35914,6 +36402,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -36617,6 +37116,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -37224,6 +37734,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -39296,6 +39817,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -39899,6 +40431,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -40193,6 +40736,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -40608,6 +41162,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -41681,6 +42246,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -41962,6 +42538,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -42658,7 +43245,22 @@
                 "id": "c035-bcef-8bbe-4496",
                 "hidden": false,
                 "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true,
                 "constraints": [{"id": "488f-130d-aca7-f309", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Retinue",
+                "id": "d6c5-b69b-5906-a304",
+                "hidden": false,
+                "targetId": "a38e-50ff-310f-f19e",
+                "constraints": [{"id": "284f-abc1-ddd2-165c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Retinue",
+                "id": "5261-c394-90a5-414f",
+                "hidden": false,
+                "targetId": "c66b-ef39-b20f-725b",
+                "constraints": [{"id": "495c-2b9e-85c6-ff7f", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
               },
               {
                 "name": "War-engine",
@@ -42672,6 +43274,7 @@
                 "id": "827a-796d-dee4-4690",
                 "hidden": false,
                 "targetId": "9699-67c9-2c0b-e64b",
+                "tracked": true,
                 "constraints": [{"id": "9338-c37e-2f7c-0014", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 2}]
               }
             ],
@@ -43168,6 +43771,17 @@
                   {
                     "childId": "b2af-ccde-ddd4-94a9",
                     "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -48036,7 +48650,18 @@
                         "type": "atLeast",
                         "value": 1
                       },
-                      {"childId": "fd9b-d04e-362d-8e5d", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "fd9b-d04e-362d-8e5d", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "d0e2-3466-3567-4bcf",
+                        "childName": "Primary - Fury of the Ancients",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
@@ -48073,17 +48698,33 @@
                 "field": "hidden",
                 "type": "set",
                 "value": false,
-                "conditions": [
+                "conditionGroups": [
                   {
-                    "childId": "b2af-ccde-ddd4-94a9",
-                    "childName": "Primary - Pride of the Legion",
-                    "field": "forces",
-                    "includeChildForces": true,
-                    "includeChildSelections": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "type": "atLeast",
-                    "value": 1
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "d0e2-3466-3567-4bcf",
+                        "childName": "Primary - Fury of the Ancients",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "b2af-ccde-ddd4-94a9",
+                        "childName": "Primary - Pride of the Legion",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }

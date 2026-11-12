@@ -43,6 +43,26 @@
         "categoryLinks": [
           {"name": "High Command", "id": "715c-2a5c-cb2f-d644", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"},
           {"name": "Iron Hands", "id": "f3ce-8973-9507-6c26", "primary": false, "targetId": "3db6-86ea-fd61-340b"}
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
         ]
       },
       {
@@ -105,7 +125,27 @@
         "import": true,
         "targetId": "34fa-844e-fbfb-3737",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "a287-08bd-b87c-976d", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "categoryLinks": [{"name": "High Command", "id": "a287-08bd-b87c-976d", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Iron Father In Artificer Armour",
@@ -114,7 +154,27 @@
         "import": true,
         "targetId": "6c8c-9770-46e5-81b6",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "e790-bb74-4fb2-b4b0", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "categoryLinks": [{"name": "High Command", "id": "e790-bb74-4fb2-b4b0", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Morlock Terminator Squad",

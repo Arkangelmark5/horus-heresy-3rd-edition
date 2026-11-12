@@ -396,6 +396,26 @@
         "targetId": "7bb3-1bf7-ab4b-c34b",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Command", "id": "0159-d713-d4b0-a993", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ],
         "modifiers": [
           {
             "field": "category",
@@ -1160,19 +1180,35 @@
         "categoryLinks": [{"name": "Lord of War", "id": "ca4b-55c7-d502-a2ae", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
         "modifierGroups": [
           {
-            "comment": "Pride of the Legion",
+            "comment": "Pride / Fury",
             "type": "and",
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "b2af-ccde-ddd4-94a9",
-                "childName": "Primary - Pride of the Legion",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
@@ -1189,19 +1225,35 @@
         "categoryLinks": [{"name": "Lord of War", "id": "0033-06d6-b148-2ddc", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
         "modifierGroups": [
           {
-            "comment": "Pride of the Legion",
+            "comment": "Pride / Fury",
             "type": "and",
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "b2af-ccde-ddd4-94a9",
-                "childName": "Primary - Pride of the Legion",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
@@ -1218,19 +1270,35 @@
         "categoryLinks": [{"name": "Lord of War", "id": "4bf1-eaa2-2035-da7c", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
         "modifierGroups": [
           {
-            "comment": "Pride of the Legion",
+            "comment": "Pride / Fury",
             "type": "and",
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "b2af-ccde-ddd4-94a9",
-                "childName": "Primary - Pride of the Legion",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
@@ -1653,7 +1721,27 @@
         "import": true,
         "targetId": "eb2a-b29a-4a7c-b01b",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "1812-a85b-aabd-95e2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "1812-a85b-aabd-95e2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Thallax Cohort",
@@ -1677,7 +1765,27 @@
         "import": true,
         "targetId": "aa14-570e-4a4d-b0ed",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "5de0-0f47-d086-22ab", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "5de0-0f47-d086-22ab", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Forge Lord In Terminator Armour",
@@ -1686,7 +1794,27 @@
         "import": true,
         "targetId": "b0e4-3685-4787-a9f9",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "cf38-f520-3b04-3b42", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "cf38-f520-3b04-3b42", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Primus Medicae",
@@ -1749,7 +1877,27 @@
         "import": true,
         "targetId": "f48f-ed83-4285-b41c",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "4d3d-fded-e683-7594", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "4d3d-fded-e683-7594", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Mortificator In Terminator Armour",
@@ -1758,7 +1906,27 @@
         "import": true,
         "targetId": "93b0-98f1-4d08-8746",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "550c-2d19-8e0a-53e4", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "550c-2d19-8e0a-53e4", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifierGroups": [
+          {
+            "comment": "Fury of the Ancients",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "d0e2-3466-3567-4bcf",
+                "childName": "Primary - Fury of the Ancients",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          }
+        ]
       },
       {
         "name": "Warmonger",
@@ -1963,19 +2131,35 @@
         "categoryLinks": [{"name": "Lord of War", "id": "a2ec-3c0c-fbb7-d93d", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
         "modifierGroups": [
           {
-            "comment": "Pride of the Legion",
+            "comment": "Pride / Fury",
             "type": "and",
-            "conditions": [
+            "conditionGroups": [
               {
-                "childId": "b2af-ccde-ddd4-94a9",
-                "childName": "Primary - Pride of the Legion",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
@@ -123484,6 +123668,73 @@
                 "name": "Petty Warlord",
                 "id": "e648-3433-03ce-2caf",
                 "description": "One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1).\n\n\nFurther, if this Prime Advantage is selected for a Unit in a Primary or Allied Detachment, then an Auxiliary Detachment may be attached to that Detachment as if this Unit was a Command Choice. All Slots in Auxiliary Detachments selected using this Prime Advantage become Prime Slots, but the only Prime Advantage that may be selected for any Slot in such a Detachment is Petty Warlord.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Ancient of War",
+            "id": "0bb7-5877-c8d5-e943",
+            "hidden": true,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "5a46-2c6e-b379-9c4c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [
+              {
+                "name": "Eternal Warrior (X)",
+                "id": "a749-6203-2d7d-dd76",
+                "hidden": false,
+                "targetId": "15b4-9e4a-f361-c5a3",
+                "type": "rule",
+                "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "1"}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "d0e2-3466-3567-4bcf",
+                    "childName": "Primary - Fury of the Ancients",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "38d4-d720-8009-acd3",
+                    "childName": "Walker Model Type",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "2de1-ddd6-ebb4-10df",
+                    "childName": "Malefic Sub-type",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "unit",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Ancient of War",
+                "id": "1700-f3fc-f332-63de",
+                "description": "This Prime Advantage may only be selected for a Battlefield Role slot that contains a Model with the Walker Type that does not have the Malefic Sub-Type. Models in a Unit selected to fill a Slot with this Prime Advantage gain the Eternal Warrior (1) Special Rule. ",
                 "hidden": false
               }
             ]
