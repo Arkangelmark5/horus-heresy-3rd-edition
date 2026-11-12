@@ -1045,7 +1045,8 @@
       {"name": "Troops - Slaanesh only", "id": "db64-3f93-35f9-8b0f", "hidden": false},
       {"name": "Heavy Assault - Slaanesh only", "id": "9a66-9be2-1995-1bac", "hidden": false},
       {"name": "Fast Attack - Slaanesh only", "id": "6f0e-f0dc-a02b-fafb", "hidden": false},
-      {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false}
+      {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false},
+      {"name": "Lord of War - Transports only", "id": "657f-b4bf-b1bc-02e7", "hidden": false}
     ],
     "costTypes": [
       {
@@ -1093,6 +1094,13 @@
         "defaultCostLimit": -1,
         "hidden": true,
         "modifiers": [{"field": "hidden", "type": "set", "value": false}]
+      },
+      {
+        "name": "Primary Detachment",
+        "id": "394e-d166-d4e5-022a",
+        "defaultCostLimit": -1,
+        "hidden": true,
+        "modifiers": [{"comment": "Hidden from new list screen, but displays count", "field": "hidden", "type": "set", "value": false}]
       }
     ],
     "entryLinks": [
@@ -1177,11 +1185,31 @@
             "shared": true,
             "type": "max",
             "value": 0
+          },
+          {
+            "id": "43f7-2d41-867a-0039",
+            "field": "394e-d166-d4e5-022a",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "1eb5-25ea-1dd5-ce13",
+            "field": "394e-d166-d4e5-022a",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
           }
         ],
         "forceEntries": [
           {
-            "name": "Crusade Primary Detachment",
+            "name": "Primary - Crusade Primary Detachment",
             "id": "8f12-c30a-6c20-6296",
             "hidden": true,
             "sortIndex": 1,
@@ -4016,29 +4044,17 @@
                 ]
               }
             ],
-            "constraints": [
-              {
-                "id": "5611-db49-9e64-44c6-min",
-                "automatic": false,
-                "field": "forces",
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {"id": "5611-db49-9e64-44c6-max", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1},
-              {
-                "id": "8613-3ef7-c5b4-4ccb",
-                "automatic": false,
-                "field": "forces",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {"id": "5df5-5821-ea4c-d0e1", "field": "forces", "includeChildSelections": false, "scope": "roster", "shared": true, "type": "max", "value": 1}
+            "constraints": [{"id": "5611-db49-9e64-44c6-max", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
             ],
             "modifiers": [
               {
@@ -5163,6 +5179,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -5920,6 +5949,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -6515,6 +6557,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -7708,6 +7763,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -8900,6 +8968,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -9702,6 +9783,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12155,6 +12249,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -12472,6 +12579,19 @@
                       {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -17085,6 +17205,19 @@
                       {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -17434,6 +17567,19 @@
                       {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -17770,6 +17916,19 @@
                       {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -18283,6 +18442,19 @@
                       {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -19928,6 +20100,19 @@
                       {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -20314,6 +20499,19 @@
                       {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -20662,6 +20860,19 @@
                       {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -20732,6 +20943,19 @@
                       {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21074,6 +21298,19 @@
                       {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -21442,6 +21679,19 @@
                       {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -21785,6 +22035,19 @@
                       {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22134,6 +22397,19 @@
                       {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -22237,6 +22513,19 @@
                       {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22581,6 +22870,19 @@
                       {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22927,6 +23229,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -23265,6 +23580,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -23611,6 +23939,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -23956,6 +24297,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -24029,6 +24383,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24381,6 +24748,19 @@
                       {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -24718,6 +25098,19 @@
                       {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25068,6 +25461,19 @@
                       {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -25140,6 +25546,19 @@
                       {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25479,6 +25898,19 @@
                       {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -25806,6 +26238,19 @@
                       {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26157,6 +26602,19 @@
                       {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -26463,6 +26921,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -26983,6 +27454,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -27600,6 +28084,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -28181,6 +28678,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -28600,6 +29110,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -29230,6 +29753,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -29998,6 +30534,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -31846,6 +32395,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -34614,6 +35176,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -35325,6 +35900,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -36015,6 +36603,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -36615,6 +37216,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -38668,6 +39282,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -39258,6 +39885,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -39545,6 +40185,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -39947,6 +40600,19 @@
                         "value": 1
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -41001,6 +41667,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               }
             ],
@@ -41276,6 +41955,19 @@
                       }
                     ]
                   }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
                 ]
               },
               {
@@ -41525,6 +42217,395 @@
                   {
                     "name": "Detachment Composition",
                     "$text": "1 Command\n2 Troops\n1 Fast Attack\n1 Heavy Assault\nSlots in this detachment may only be filled with Units from the Daemons of Slaanesh Army list\nCommand Units do not grant additional Auxiliary Detachments",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Primary - Pride of the Legion",
+            "id": "b2af-ccde-ddd4-94a9",
+            "hidden": true,
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "High Command",
+                "id": "b0bd-0ac9-5ec0-124b",
+                "hidden": false,
+                "targetId": "d9a6-9b5f-b18a-4d63",
+                "constraints": [{"id": "1cbc-28cf-2195-d4ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime High Command",
+                "id": "2303-5133-17fc-b88d",
+                "hidden": false,
+                "targetId": "3568-ad75-b452-3137",
+                "constraints": [{"id": "f844-f18c-d550-6600", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command",
+                "id": "754a-7f72-dace-026d",
+                "hidden": false,
+                "targetId": "6dbf-654a-f06f-2d69",
+                "constraints": [{"id": "1098-fc63-8944-ffa3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "d8aa-5694-628e-6242",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true,
+                "constraints": [{"id": "44bf-8d53-5f96-b28d", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Retinue",
+                "id": "cf0e-09cf-72e1-2154",
+                "hidden": false,
+                "targetId": "a38e-50ff-310f-f19e",
+                "constraints": [{"id": "9950-699d-6b6b-0cfb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+              },
+              {
+                "name": "Prime Retinue",
+                "id": "7f63-27e3-462e-b3d3",
+                "hidden": false,
+                "targetId": "c66b-ef39-b20f-725b",
+                "constraints": [{"id": "7781-4d05-c2fe-36cb", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Elites",
+                "id": "41ff-c42c-a00f-5765",
+                "hidden": false,
+                "targetId": "5d5e-958f-e388-50b5",
+                "constraints": [{"id": "5fe6-5956-5916-e409", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}]
+              },
+              {
+                "name": "Prime Elites",
+                "id": "d161-12e4-07ab-d710",
+                "hidden": false,
+                "targetId": "276f-7a07-a56c-affd",
+                "tracked": true,
+                "constraints": [{"id": "e41d-9b74-4109-335c", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Heavy Assault",
+                "id": "4769-344c-a5db-fb18",
+                "hidden": false,
+                "targetId": "3235-bd79-e9b1-60fa",
+                "constraints": [{"id": "1f09-e500-fb4c-352b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}]
+              },
+              {
+                "name": "Prime Heavy Assault",
+                "id": "c03e-e8a3-05b6-4d1e",
+                "hidden": false,
+                "targetId": "1e95-35f0-1353-ffa1",
+                "tracked": true,
+                "constraints": [{"id": "6525-f60b-fa60-7a6e", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Heavy Transport",
+                "id": "cae1-a8f6-ec86-6bca",
+                "hidden": true,
+                "targetId": "52d0-8b78-439e-18e5",
+                "constraints": [{"id": "b860-c2ad-92a8-732a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "b860-c2ad-92a8-732a",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "5d5e-958f-e388-50b5",
+                        "childName": "Elites",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "3235-bd79-e9b1-60fa",
+                        "childName": "Heavy Assault",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "a38e-50ff-310f-f19e",
+                        "childName": "Retinue",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "5d5e-958f-e388-50b5",
+                            "childName": "Elites",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "3235-bd79-e9b1-60fa",
+                            "childName": "Heavy Assault",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "a38e-50ff-310f-f19e",
+                            "childName": "Retinue",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "force",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Prime Heavy Transport",
+                "id": "6fe4-c362-32c6-fe1a",
+                "hidden": false,
+                "targetId": "abff-3686-c39a-9a24",
+                "constraints": [{"id": "af81-0323-b509-ccee", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "comment": "Legions Only",
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Primary - Pride of the Legion",
+                "id": "d764-0bb2-359f-05e8",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 High Command\n2 Command (1 Prime)\n3 Retinue\n5 Heavy Assault (1 Prime)\n5 Elite (1 Prime)\nFor each Retinue, Heavy Assault or Elites Battlefield Role Slot filled, one Heavy Transport Slot may be added to this Detachment.\nWhen adding a Unit in this Detachment to an Army Roster, all Models in that Unit with the Vanguard (X) Special Rule may have it exchanged for the Line (1) Special Rule. \n\n\nRestrictions\nAn Army using this Primary Detachment must include at least one Model with the Master of the Legion Trait.\nPrime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected. \nOnly the following additional Detachments may be selected:- \n• Officer Cadre\n• Shock Assault\n• Heavy Support\n• Warlord  \n• Lord of War (may only be used to select Models with the Transport Sub-Type)\n\n\nEach time a Unit with the Elites or Heavy Assault Battlefield Roles in an Army with this Primary Detachment is Destroyed, the Controlling Player’s Opponent scores 1 Victory Point.",
                     "typeId": "ec3f-877b-f887-18b2"
                   }
                 ]
@@ -41795,6 +42876,19 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -46641,7 +47735,25 @@
                 "field": "hidden",
                 "type": "set",
                 "value": true,
-                "conditions": [{"childId": "fd9b-d04e-362d-8e5d", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "b2af-ccde-ddd4-94a9",
+                        "childName": "Primary - Pride of the Legion",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {"childId": "fd9b-d04e-362d-8e5d", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -46660,6 +47772,34 @@
                 "type": "set",
                 "value": 1,
                 "conditions": [{"childId": "fd9b-d04e-362d-8e5d", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "Lord of War - Transports only",
+            "id": "88b5-0992-cef7-bb94",
+            "hidden": true,
+            "targetId": "657f-b4bf-b1bc-02e7",
+            "tracked": true,
+            "constraints": [{"id": "fb2a-8e26-7576-0aa8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "b2af-ccde-ddd4-94a9",
+                    "childName": "Primary - Pride of the Legion",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
               }
             ]
           }
@@ -46986,7 +48126,7 @@
             "characteristics": [
               {
                 "name": "Detachment Composition",
-                "$text": "2 Lord of War\nMay be of an Faction\nPoints total may not exceed 25% of Army total.",
+                "$text": "2 Lord of War\nMay be of an Faction\nPoints total may not exceed 25% of Army total.\nMay only include Transports if included with Pride of the Legion Primary Detachment",
                 "typeId": "ec3f-877b-f887-18b2"
               }
             ]

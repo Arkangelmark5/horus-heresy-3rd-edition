@@ -1157,7 +1157,27 @@
         "import": true,
         "targetId": "d1dc-6a65-136b-7d33",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "ca4b-55c7-d502-a2ae", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "ca4b-55c7-d502-a2ae", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifierGroups": [
+          {
+            "comment": "Pride of the Legion",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "b2af-ccde-ddd4-94a9",
+                "childName": "Primary - Pride of the Legion",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
+          }
+        ]
       },
       {
         "name": "Sokar Stormbird",
@@ -1166,7 +1186,27 @@
         "import": true,
         "targetId": "c2de-41c2-f4fa-996c",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "0033-06d6-b148-2ddc", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "0033-06d6-b148-2ddc", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifierGroups": [
+          {
+            "comment": "Pride of the Legion",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "b2af-ccde-ddd4-94a9",
+                "childName": "Primary - Pride of the Legion",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
+          }
+        ]
       },
       {
         "name": "Mastodon Super-Heavy Assault Transport",
@@ -1175,7 +1215,27 @@
         "import": true,
         "targetId": "d29b-64ce-e91e-75fa",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "4bf1-eaa2-2035-da7c", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "4bf1-eaa2-2035-da7c", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifierGroups": [
+          {
+            "comment": "Pride of the Legion",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "b2af-ccde-ddd4-94a9",
+                "childName": "Primary - Pride of the Legion",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
+          }
+        ]
       },
       {
         "name": "Master of Descent",
@@ -1900,7 +1960,27 @@
         "import": true,
         "targetId": "fb1c-580c-4b36-8fb7",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "a2ec-3c0c-fbb7-d93d", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "a2ec-3c0c-fbb7-d93d", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifierGroups": [
+          {
+            "comment": "Pride of the Legion",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "b2af-ccde-ddd4-94a9",
+                "childName": "Primary - Pride of the Legion",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "remove", "value": "a46f-a465-0ead-d6b8"}, {"field": "category", "type": "set-primary", "value": "657f-b4bf-b1bc-02e7"}]
+          }
+        ]
       },
       {
         "name": "Castra Ferrum Dreadnought",
