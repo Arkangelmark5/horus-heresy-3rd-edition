@@ -1046,7 +1046,9 @@
       {"name": "Heavy Assault - Slaanesh only", "id": "9a66-9be2-1995-1bac", "hidden": false},
       {"name": "Fast Attack - Slaanesh only", "id": "6f0e-f0dc-a02b-fafb", "hidden": false},
       {"name": "Cohort Doctrine: Sublime Cohort", "id": "6624-90cd-fbeb-7a2a", "hidden": false},
-      {"name": "Lord of War - Transports only", "id": "657f-b4bf-b1bc-02e7", "hidden": false}
+      {"name": "Lord of War - Transports only", "id": "657f-b4bf-b1bc-02e7", "hidden": false},
+      {"name": "Command - with Battlesmith (X) only", "id": "d4c0-6b33-adf5-aa41", "hidden": false},
+      {"name": "High Command - with Battlesmith (X) only", "id": "10fd-793f-8c01-ecc2", "hidden": false}
     ],
     "costTypes": [
       {
@@ -42629,6 +42631,50 @@
             "id": "d0e2-3466-3567-4bcf",
             "hidden": true,
             "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "High Command - with Battlesmith (X) only",
+                "id": "4a2f-dafe-1d94-0452",
+                "hidden": false,
+                "targetId": "10fd-793f-8c01-ecc2",
+                "constraints": [{"id": "3acc-e98e-8046-2c54", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime High Command",
+                "id": "ca14-4d8e-a1b5-df65",
+                "hidden": false,
+                "targetId": "3568-ad75-b452-3137",
+                "constraints": [{"id": "ec11-8c70-081f-d405", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - with Battlesmith (X) only",
+                "id": "c14b-0e82-df67-2db3",
+                "hidden": false,
+                "targetId": "d4c0-6b33-adf5-aa41",
+                "constraints": [{"id": "da61-c1da-244a-aa4d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "c035-bcef-8bbe-4496",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "488f-130d-aca7-f309", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "War-engine",
+                "id": "dbf2-f60a-3abb-29f8",
+                "hidden": false,
+                "targetId": "2499-7239-685f-8465",
+                "constraints": [{"id": "7d11-f554-b7fa-a61b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}]
+              },
+              {
+                "name": "Prime War-engine",
+                "id": "827a-796d-dee4-4690",
+                "hidden": false,
+                "targetId": "9699-67c9-2c0b-e64b",
+                "constraints": [{"id": "9338-c37e-2f7c-0014", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              }
+            ],
             "constraints": [
               {
                 "id": "b0bb-efbd-35bb-e6f6",
@@ -62224,6 +62270,28 @@
                         "shared": true,
                         "type": "equalTo",
                         "value": 0
+                      },
+                      {
+                        "childId": "b2af-ccde-ddd4-94a9",
+                        "childName": "Primary - Pride of the Legion",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "d0e2-3466-3567-4bcf",
+                        "childName": "Primary - Fury of the Ancients",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
                       }
                     ]
                   }
@@ -62271,6 +62339,28 @@
                         "childId": "122b-0eda-4e29-401e",
                         "childName": "Alone and Forgotten",
                         "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "b2af-ccde-ddd4-94a9",
+                        "childName": "Primary - Pride of the Legion",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "d0e2-3466-3567-4bcf",
+                        "childName": "Primary - Fury of the Ancients",
+                        "field": "forces",
                         "includeChildForces": true,
                         "includeChildSelections": true,
                         "scope": "roster",
@@ -62557,49 +62647,81 @@
                         "type": "and",
                         "conditionGroups": [
                           {
-                            "type": "or",
-                            "conditions": [
-                              {"childId": "8f12-c30a-6c20-6296", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                              {"childId": "7469-bbd2-a2ad-f8a8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                            "type": "and",
+                            "conditionGroups": [
                               {
-                                "childId": "33cf-087a-39ee-2532",
-                                "childName": "Primary - Zone Mortalis Strike Force",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "force",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              },
-                              {
-                                "childId": "a4bf-9629-2065-4885",
-                                "childName": "Primary - Zone Mortalis Bulwark",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "force",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              },
-                              {
-                                "childId": "e46a-e7a0-2dfe-66cf",
-                                "childName": "Primary - Zone Mortalis Linebreaker",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "force",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
+                                "type": "or",
+                                "conditions": [
+                                  {"childId": "8f12-c30a-6c20-6296", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                                  {"childId": "7469-bbd2-a2ad-f8a8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                                  {
+                                    "childId": "33cf-087a-39ee-2532",
+                                    "childName": "Primary - Zone Mortalis Strike Force",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "force",
+                                    "shared": true,
+                                    "type": "instanceOf",
+                                    "value": 1
+                                  },
+                                  {
+                                    "childId": "a4bf-9629-2065-4885",
+                                    "childName": "Primary - Zone Mortalis Bulwark",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "force",
+                                    "shared": true,
+                                    "type": "instanceOf",
+                                    "value": 1
+                                  },
+                                  {
+                                    "childId": "e46a-e7a0-2dfe-66cf",
+                                    "childName": "Primary - Zone Mortalis Linebreaker",
+                                    "field": "selections",
+                                    "includeChildSelections": true,
+                                    "scope": "force",
+                                    "shared": true,
+                                    "type": "instanceOf",
+                                    "value": 1
+                                  }
+                                ]
                               }
+                            ],
+                            "conditions": [
+                              {"childId": "d9a6-9b5f-b18a-4d63", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
                             ]
                           }
                         ],
+                        "conditions": [{"childId": "2f57-6e9d-8a7b-5c2e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                      },
+                      {
+                        "type": "or",
                         "conditions": [
-                          {"childId": "d9a6-9b5f-b18a-4d63", "field": "selections", "includeChildSelections": true, "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                          {
+                            "childId": "b2af-ccde-ddd4-94a9",
+                            "childName": "Primary - Pride of the Legion",
+                            "field": "forces",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "d0e2-3466-3567-4bcf",
+                            "childName": "Primary - Fury of the Ancients",
+                            "field": "forces",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
                         ]
                       }
-                    ],
-                    "conditions": [{"childId": "2f57-6e9d-8a7b-5c2e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    ]
                   }
                 ]
               }
