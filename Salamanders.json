@@ -84,7 +84,25 @@
                 "value": 1
               }
             ],
-            "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "10fd-793f-8c01-ecc2"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "80c1-b49d-ae67-3269"}]
           }
         ]
       },

@@ -97,6 +97,24 @@
             "type": "set-primary",
             "value": "6177-f967-f944-a7bd",
             "conditions": [{"childId": "07f0-6f5f-59f4-f95f", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -108,7 +126,31 @@
         "import": true,
         "targetId": "ca07-1c1d-3788-c9e5",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "5866-3dad-1713-8d0e", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "5866-3dad-1713-8d0e", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "80c1-b49d-ae67-3269",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Veteran Tactical Squad",
@@ -414,6 +456,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ],
         "modifiers": [
@@ -758,6 +818,26 @@
         "targetId": "6cac-d5d2-dda7-ea8f",
         "type": "selectionEntry",
         "categoryLinks": [{"name": "Support", "id": "59fd-f339-cffd-8d94", "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
+        "modifierGroups": [
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "0d7e-01ea-3b33-11e4"}]
+          }
+        ],
         "modifiers": [
           {
             "field": "category",
@@ -785,7 +865,27 @@
         "import": true,
         "targetId": "84cd-c790-5886-8814",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Support", "id": "25b7-7573-1c25-828d", "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}]
+        "categoryLinks": [{"name": "Support", "id": "25b7-7573-1c25-828d", "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
+        "modifierGroups": [
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "0d7e-01ea-3b33-11e4"}]
+          }
+        ]
       },
       {
         "name": "Araknae Quad Accelerator Platform",
@@ -801,6 +901,24 @@
             "type": "set-primary",
             "value": "9a5a-a469-c15d-380d",
             "conditions": [{"childId": "07f0-6f5f-59f4-f95f", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -988,7 +1106,12 @@
         "import": true,
         "targetId": "5794-faa2-b2c8-ef0a",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon", "id": "03df-ff68-a13e-06dc", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}]
+        "categoryLinks": [{"name": "Recon", "id": "03df-ff68-a13e-06dc", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}],
+        "modifiers": [
+          {"field": "category", "scope": "unit", "type": "set-primary", "value": "9f2b-7b7d-f67b-41ff"},
+          {"field": "category", "type": "remove", "value": "2b65-a3f2-620a-dc58"},
+          {"field": "category", "type": "add", "value": "9f2b-7b7d-f67b-41ff"}
+        ]
       },
       {
         "name": "Xiphon Interceptor",
@@ -1168,7 +1291,31 @@
         "import": true,
         "targetId": "af99-c4c6-cde2-2ee1",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Lord of War", "id": "b1fd-28f5-7563-15b8", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}]
+        "categoryLinks": [{"name": "Lord of War", "id": "b1fd-28f5-7563-15b8", "primary": true, "targetId": "a46f-a465-0ead-d6b8"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "80c1-b49d-ae67-3269",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Thunderhawk Gunship",
@@ -1740,6 +1887,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ]
       },
@@ -1784,6 +1949,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ]
       },
@@ -1813,6 +1996,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ]
       },
@@ -1896,6 +2097,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ]
       },
@@ -1925,6 +2144,24 @@
               }
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "d4c0-6b33-adf5-aa41"}]
+          },
+          {
+            "comment": "Armoured Spearhead",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
         ]
       },
@@ -19143,7 +19380,34 @@
           {"name": "[Allegiance]", "id": "e103-ce2c-2264-7d24", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "[Legiones Astartes]", "id": "a91d-b4d6-903c-f0fe", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
           {"name": "Smokescreen", "id": "fed2-23d1-9f49-53c3", "hidden": false, "targetId": "12ec-97aa-0b8a-7573", "type": "profile"},
-          {"name": "Smokescreen", "id": "d967-373a-3607-30c1", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "d967-373a-3607-30c1", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "1f9f-d874-e0d7-933b",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -19266,8 +19530,30 @@
                 "sortIndex": 9,
                 "targetId": "523f-fa3f-0620-5e97",
                 "type": "selectionEntry",
-                "constraints": [{"id": "3fe8-ce24-4737-feae", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 60}]
+                "constraints": [
+                  {"id": "3fe8-ce24-4737-feae", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "11d1-8a06-a70b-e8b0", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
+                ],
+                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 60}],
+                "modifiers": [
+                  {
+                    "field": "11d1-8a06-a70b-e8b0",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -21446,6 +21732,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "78cc-7b39-5a1a-b2fe",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -22164,6 +22477,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "1467-7bfd-cf07-4b90",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -33760,6 +34100,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "a831-0d19-15c5-8e89",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -56698,7 +57065,34 @@
               }
             ]
           },
-          {"name": "Deathstorm", "id": "eba3-9185-3cee-74c9", "hidden": false, "targetId": "a89e-9755-0c6e-80db", "type": "rule"}
+          {"name": "Deathstorm", "id": "eba3-9185-3cee-74c9", "hidden": false, "targetId": "a89e-9755-0c6e-80db", "type": "rule"},
+          {
+            "name": "Squadron Tactics",
+            "id": "1a05-d723-3e82-1452",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -57657,6 +58051,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "8d19-6a55-0188-21e7",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -57952,6 +58373,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "90d6-d955-8a8e-95a9",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -58141,6 +58589,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "925f-bec4-e124-315b",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -58454,6 +58929,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "5058-81e7-b3a2-1061",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -58636,6 +59138,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "d4c6-f28f-639c-9827",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -58801,6 +59330,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "e18e-069f-f640-155c",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -61597,6 +62153,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "65d4-59bd-3907-c23d",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -61898,6 +62481,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "814e-d5a5-ada1-71e2",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -63703,6 +64313,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "4e94-18eb-6f01-5d63",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -63896,7 +64533,34 @@
               }
             ]
           },
-          {"name": "Assault Vehicle", "id": "d5d4-d9b0-3154-944d", "hidden": false, "targetId": "150c-16e6-1212-9f75", "type": "rule"}
+          {"name": "Assault Vehicle", "id": "d5d4-d9b0-3154-944d", "hidden": false, "targetId": "150c-16e6-1212-9f75", "type": "rule"},
+          {
+            "name": "Squadron Tactics",
+            "id": "2ec8-8da1-d5b4-6b47",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -64169,6 +64833,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "cc78-5947-8e88-28af",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -64805,6 +65496,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "0288-17e2-d1a7-08f6",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -65630,6 +66348,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "beab-03a7-031f-cc5c",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -65941,6 +66686,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "11f2-6127-157a-bcd8",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -66172,6 +66944,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "28ac-1ba4-3a34-4a4a",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -66616,6 +67415,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "54e0-d1e1-1bee-7df9",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -66870,6 +67696,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "9d15-c70f-9e19-cfac",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -67546,6 +68399,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "925b-999c-f0a5-ddea",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -67962,7 +68842,34 @@
             "type": "rule",
             "modifiers": [{"field": "name", "type": "set", "value": "Explodes (4+)"}]
           },
-          {"name": "Smokescreen", "id": "7f0b-3eb0-8e75-21f3", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "7f0b-3eb0-8e75-21f3", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "6c4e-47f8-9737-b674",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -68155,7 +69062,34 @@
             "type": "rule",
             "modifiers": [{"field": "name", "type": "set", "value": "Explodes (5+)"}]
           },
-          {"name": "Smokescreen", "id": "aac8-0e3e-34ea-e1f2", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "aac8-0e3e-34ea-e1f2", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "ada0-e5db-66d4-d7cc",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -68339,7 +69273,34 @@
           {"name": "[Allegiance]", "id": "eeab-2ada-77a8-2444", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "[Legiones Astartes]", "id": "4c8f-eba2-c197-57e1", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
           {"name": "Smokescreen", "id": "9f66-aeec-541c-e3ff", "hidden": false, "targetId": "12ec-97aa-0b8a-7573", "type": "profile"},
-          {"name": "Smokescreen", "id": "3f19-5e47-cbbd-cb9b", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "3f19-5e47-cbbd-cb9b", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "7961-e62c-21c5-3fef",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -68555,7 +69516,34 @@
           {"name": "[Allegiance]", "id": "1a33-c15a-3480-9370", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "[Legiones Astartes]", "id": "f954-2d8c-a716-67d4", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
           {"name": "Smokescreen", "id": "ff1a-c88e-1df3-2730", "hidden": false, "targetId": "12ec-97aa-0b8a-7573", "type": "profile"},
-          {"name": "Smokescreen", "id": "f685-eb58-3ecf-5bca", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "f685-eb58-3ecf-5bca", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "af1e-77ea-5804-904e",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -68673,8 +69661,30 @@
                 "import": true,
                 "targetId": "523f-fa3f-0620-5e97",
                 "type": "selectionEntry",
-                "constraints": [{"id": "2950-4dbf-b75a-2d27", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 60}]
+                "constraints": [
+                  {"id": "2950-4dbf-b75a-2d27", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "a2a8-f0e9-cd42-178d", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
+                ],
+                "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 60}],
+                "modifiers": [
+                  {
+                    "field": "a2a8-f0e9-cd42-178d",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -68816,7 +69826,34 @@
           {"name": "[Allegiance]", "id": "5436-7686-ab3f-a189", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
           {"name": "[Legiones Astartes]", "id": "1a4e-8a06-41fd-1e60", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
           {"name": "Smokescreen", "id": "37f9-a88f-394e-cf46", "hidden": false, "targetId": "12ec-97aa-0b8a-7573", "type": "profile"},
-          {"name": "Smokescreen", "id": "fc04-18d5-cac3-6b7a", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"}
+          {"name": "Smokescreen", "id": "fc04-18d5-cac3-6b7a", "hidden": false, "targetId": "999b-689a-4ee7-8901", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "9fd1-fc38-fb14-1c21",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "rules": [
@@ -68967,7 +70004,34 @@
             "type": "rule",
             "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": 2}]
           },
-          {"name": "Assault Vehicle", "id": "3f3a-f76b-7a13-e32e", "hidden": false, "targetId": "150c-16e6-1212-9f75", "type": "rule"}
+          {"name": "Assault Vehicle", "id": "3f3a-f76b-7a13-e32e", "hidden": false, "targetId": "150c-16e6-1212-9f75", "type": "rule"},
+          {
+            "name": "Squadron Tactics",
+            "id": "b248-5b0e-8fe7-4ac1",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "rules": [
@@ -69237,6 +70301,33 @@
             "targetId": "86e9-04a5-e7d9-0253",
             "type": "rule",
             "modifiers": [{"field": "name", "type": "set", "value": "Void Shields (2)"}]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "c3c0-0e0a-81e1-0664",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -71716,6 +72807,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "f362-0876-91a4-39e5",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -108537,6 +109655,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "21f3-bf68-a85c-b43d",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -108838,6 +109983,33 @@
                     "scope": "primary-catalogue",
                     "shared": true,
                     "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "60af-a785-24bb-00b2",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
                     "value": 1
                   }
                 ]
@@ -111807,6 +112979,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "a54c-31b0-e719-8454",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -111965,6 +113164,33 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "b49a-5a60-3af0-390b",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -112079,7 +113305,34 @@
         "infoLinks": [
           {"name": "Auxiliary Transport Bays", "id": "4c3b-b696-b8fa-b064", "hidden": false, "targetId": "0408-7152-2a7e-8d2b", "type": "rule"},
           {"name": "[Allegiance]", "id": "1d0c-ad89-39dc-154f", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "[Legiones Astartes]", "id": "432b-9519-41a1-3fc2", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"}
+          {"name": "[Legiones Astartes]", "id": "432b-9519-41a1-3fc2", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "7345-ab8b-60d4-ddc2",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -113759,7 +115012,34 @@
         ],
         "infoLinks": [
           {"name": "[Allegiance]", "id": "2eab-825e-7f17-df02", "hidden": false, "targetId": "bb66-f1f6-4d65-5a07", "type": "profile"},
-          {"name": "[Legiones Astartes]", "id": "155b-249d-bc0a-7d92", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"}
+          {"name": "[Legiones Astartes]", "id": "155b-249d-bc0a-7d92", "hidden": false, "targetId": "641c-ca0a-7093-4525", "type": "profile"},
+          {
+            "name": "Squadron Tactics",
+            "id": "9b20-2691-2b59-3e5e",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
         "selectionEntries": [
@@ -114501,6 +115781,33 @@
             "targetId": "3973-ed50-1482-ff4a",
             "type": "rule",
             "modifiers": [{"arg": "X", "field": "name", "type": "replace", "value": "4+"}]
+          },
+          {
+            "name": "Squadron Tactics",
+            "id": "4e4c-3231-26f7-955e",
+            "hidden": true,
+            "targetId": "4933-4ef8-5371-9566",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [{"field": "category", "type": "add", "value": "3134-c5e1-b266-d2e0"}, {"field": "category", "type": "add", "value": "8d49-126f-5500-aa28"}],
@@ -123804,7 +125111,18 @@
         "id": "6dcf-12ac-0f05-f158",
         "hidden": false,
         "sortIndex": 12,
-        "constraints": [{"id": "1eee-0db8-69f2-9838", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "constraints": [
+          {
+            "id": "1eee-0db8-69f2-9838",
+            "automatic": true,
+            "field": "selections",
+            "includeChildSelections": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
         "entryLinks": [
           {
             "name": "Decurion Locus",
@@ -123813,6 +125131,7 @@
             "import": true,
             "targetId": "54fc-a999-6373-5164",
             "type": "selectionEntry",
+            "constraints": [{"id": "002e-5a76-b09a-919a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 30}],
             "modifiers": [
               {
@@ -123830,6 +125149,7 @@
             "import": true,
             "targetId": "99b1-fccd-7389-fdec",
             "type": "selectionEntry",
+            "constraints": [{"id": "e162-22de-62fd-3505", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 20}],
             "modifiers": [
               {
@@ -123847,6 +125167,7 @@
             "import": true,
             "targetId": "cccd-963b-fdfa-ab7a",
             "type": "selectionEntry",
+            "constraints": [{"id": "ec33-1a47-67e7-2abf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 30}],
             "modifiers": [
               {
@@ -123894,6 +125215,7 @@
             "import": true,
             "targetId": "05ea-aecd-f5bc-63ea",
             "type": "selectionEntry",
+            "constraints": [{"id": "6746-1fc4-1685-f499", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 25}],
             "modifiers": [
               {
@@ -123937,6 +125259,186 @@
                 "type": "set",
                 "value": 30,
                 "conditions": [{"childId": "e3f2-ff0d-f190-ecfd", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "1eee-0db8-69f2-9838",
+            "type": "set",
+            "value": 2,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "54fc-a999-6373-5164",
+                        "childName": "Decurion Locus",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "99b1-fccd-7389-fdec",
+                        "childName": "Decurion Defensor",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "cccd-963b-fdfa-ab7a",
+                        "childName": "Decurion Sagittar",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "05ea-aecd-f5bc-63ea",
+                        "childName": "Decurion Lanius",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Battlefield Role",
+            "id": "23cd-0304-bc84-4367",
+            "defaultSelectionEntryId": "4f1e-05b9-7511-6bde",
+            "hidden": true,
+            "constraints": [
+              {"id": "c73f-f4b3-c538-cfbc", "automatic": true, "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6c17-728e-8125-ac00", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "54fc-a999-6373-5164",
+                            "childName": "Decurion Locus",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "99b1-fccd-7389-fdec",
+                            "childName": "Decurion Defensor",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "cccd-963b-fdfa-ab7a",
+                            "childName": "Decurion Sagittar",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "05ea-aecd-f5bc-63ea",
+                            "childName": "Decurion Lanius",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
+                        "field": "forces",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Armour",
+                "id": "4f1e-05b9-7511-6bde",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Armour Decurion", "id": "464e-7aca-02e1-3e72", "hidden": false, "primary": false, "targetId": "533e-ae4f-7783-d3aa"}],
+                "modifiers": [
+                  {"field": "category", "scope": "unit", "type": "set-primary", "value": "643a-1012-bd51-6537"},
+                  {"field": "category", "scope": "unit", "type": "remove", "value": "20f7-dff3-810c-f7a7"}
+                ]
+              },
+              {
+                "name": "Command",
+                "id": "2d42-0c91-9740-485c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Command Decurion", "id": "a74d-ff7a-04b1-0d93", "hidden": false, "primary": false, "targetId": "42a3-8f43-17e0-e597"}],
+                "modifiers": [
+                  {"field": "category", "scope": "unit", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"},
+                  {"field": "category", "scope": "unit", "type": "remove", "value": "643a-1012-bd51-6537"}
+                ]
               }
             ]
           }

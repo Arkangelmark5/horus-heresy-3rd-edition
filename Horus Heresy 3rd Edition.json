@@ -1052,7 +1052,12 @@
       {"name": "Golden Keshig", "id": "cd90-d500-c550-b899", "hidden": false},
       {"name": "Elites - Golden Keshig only", "id": "2425-4123-aa05-0c0e", "hidden": false},
       {"name": "Support - Kyzagan Assault Speeder Units only", "id": "47de-e0a7-79d6-d1ad", "hidden": false},
-      {"name": "Recon - Antigrav or Flyer only", "id": "9745-97d7-b05e-7b8a", "hidden": false}
+      {"name": "High Command - Battlesmith or Decurion Magna only", "id": "80c1-b49d-ae67-3269", "hidden": false},
+      {"name": "Command - Battlesmith or Decurion only", "id": "20f7-dff3-810c-f7a7", "hidden": false},
+      {"name": "Support - Battlesmith or Vehicle only", "id": "0d7e-01ea-3b33-11e4", "hidden": false},
+      {"name": "Command Decurion", "id": "42a3-8f43-17e0-e597", "hidden": false},
+      {"name": "Armour Decurion", "id": "533e-ae4f-7783-d3aa", "hidden": false},
+      {"name": "Recon - Battlesmith or Vehicle only", "id": "9f2b-7b7d-f67b-41ff", "hidden": false}
     ],
     "costTypes": [
       {
@@ -4699,6 +4704,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -6035,6 +6051,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -7275,6 +7302,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -7561,33 +7599,36 @@
                     "conditionGroups": [
                       {
                         "type": "or",
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "04d9-b191-7ea7-d461",
-                            "childName": "Primary - Sky-Hunter Phalanx",
-                            "field": "forces",
-                            "includeChildSelections": true,
-                            "scope": "force",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "122b-0eda-4e29-401e",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "scope": "roster",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
                           }
-                        ]
-                      },
-                      {
-                        "type": "and",
+                        ],
                         "conditions": [
                           {
-                            "childId": "122b-0eda-4e29-401e",
-                            "field": "selections",
+                            "childId": "6f9b-3d99-7ecd-3214",
+                            "childName": "Primary - Armoured Spearhead",
+                            "field": "forces",
                             "includeChildForces": true,
                             "includeChildSelections": true,
                             "scope": "roster",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
-                          },
-                          {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                          }
                         ]
                       }
                     ]
@@ -7649,11 +7690,11 @@
               },
               {"name": "Paragon of Malevolence", "id": "d74e-66f2-0b58-f2e6", "hidden": false, "targetId": "708b-b2ff-1a14-2901"},
               {
-                "name": "Recon - Antigrav or Flyer only",
-                "id": "4d89-2275-0389-42e7",
+                "name": "Recon - Battlesmith or Vehicle only",
+                "id": "ceb3-dbac-278b-239b",
                 "hidden": true,
-                "targetId": "9745-97d7-b05e-7b8a",
-                "constraints": [{"id": "6301-45c6-3b7b-065d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+                "targetId": "9f2b-7b7d-f67b-41ff",
+                "constraints": [{"id": "e08a-e4e9-d6f3-49b2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
                 "modifiers": [
                   {
                     "field": "hidden",
@@ -7661,13 +7702,14 @@
                     "value": false,
                     "conditions": [
                       {
-                        "childId": "04d9-b191-7ea7-d461",
-                        "childName": "Primary - Sky-Hunter Phalanx",
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
                         "field": "forces",
+                        "includeChildForces": true,
                         "includeChildSelections": true,
-                        "scope": "force",
+                        "scope": "roster",
                         "shared": true,
-                        "type": "instanceOf",
+                        "type": "atLeast",
                         "value": 1
                       }
                     ]
@@ -8554,6 +8596,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -10012,6 +10065,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11692,6 +11756,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12530,6 +12605,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12876,6 +12962,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -17530,6 +17627,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -17914,6 +18022,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -18279,6 +18398,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18827,6 +18957,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -20513,6 +20654,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -20934,6 +21086,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21317,6 +21480,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21416,6 +21590,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21793,6 +21978,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22202,6 +22398,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22574,6 +22781,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22964,6 +23182,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -23096,6 +23325,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23475,6 +23715,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23862,6 +24113,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24229,6 +24491,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24616,6 +24889,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24996,6 +25280,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25098,6 +25393,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25491,6 +25797,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25857,6 +26174,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26248,6 +26576,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26349,6 +26688,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26729,6 +27079,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -27085,6 +27446,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27466,6 +27838,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -27801,6 +28184,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28356,6 +28750,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29007,6 +29412,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -30074,6 +30490,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -30732,6 +31159,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31535,6 +31973,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33418,6 +33867,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -36227,6 +36687,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -36973,6 +37444,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -37698,6 +38180,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -38327,6 +38820,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -40421,6 +40925,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -41046,6 +41561,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -41362,6 +41888,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -41799,6 +42336,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -42894,6 +43442,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -43197,6 +43756,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -44530,6 +45100,279 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Primary - Armoured Spearhead",
+            "id": "6f9b-3d99-7ecd-3214",
+            "hidden": true,
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "High Command - Battlesmith or Decurion Magna",
+                "id": "fb1e-5b44-80d4-62b1",
+                "hidden": false,
+                "targetId": "80c1-b49d-ae67-3269",
+                "constraints": [{"id": "4680-c145-442f-da4a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime High Command",
+                "id": "be66-ab87-3129-15b7",
+                "hidden": false,
+                "targetId": "3568-ad75-b452-3137",
+                "constraints": [{"id": "e4b2-e73f-2622-2a75", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command - Battlesmith or Decurion only",
+                "id": "2f8e-6d53-110f-980d",
+                "hidden": false,
+                "targetId": "20f7-dff3-810c-f7a7",
+                "constraints": [{"id": "c2ce-1e4b-8379-e340", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "35f3-499b-7073-805c",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "constraints": [{"id": "3699-f18d-58b1-ce98", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Support - Battlesmith or Vehicle only",
+                "id": "6e58-ba61-0000-42a1",
+                "hidden": false,
+                "targetId": "0d7e-01ea-3b33-11e4",
+                "constraints": [{"id": "35a0-5637-554a-02d6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Support",
+                "id": "31b0-8b9a-5d71-7e81",
+                "hidden": false,
+                "targetId": "1c79-ecdf-9a64-84c9",
+                "constraints": [{"id": "3203-e2de-b85e-e6c3", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Armour",
+                "id": "d8fa-485e-5cc6-50a5",
+                "hidden": false,
+                "targetId": "643a-1012-bd51-6537",
+                "constraints": [{"id": "68ff-52db-5b24-725e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}]
+              },
+              {
+                "name": "Prime Armour",
+                "id": "c1b2-26d5-4843-32cd",
+                "hidden": false,
+                "targetId": "4460-7bc1-4d80-aecb",
+                "constraints": [{"id": "97dc-a594-30be-2d78", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Primary - Armoured Spearhead",
+                "id": "d2b7-c923-77a4-e54a",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 High Command\n3 Command\n1 Support\n10 Armour\n\n\n• Models with the Vehicle Type in an Army using this Primary Detachment gain the Squadron Tactics Special Rule. \n• Models with the Decurion Magna upgrade may be used to fill High Command Slots in this Detachment. Models with other Decurion upgrades may be used to fill Command Slots in this Detachment. \n\n\nRestrictions\n• Prime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected. \n• Only the following additional Detachments may be selected:\n- Armoured Support\n- Combat Pioneer\n- First Strike\n- Techmarine Covenant\n- Armoured Fist\n- Lord of War\n• Models without the Vehicle Type may only be included in an Army that uses this Primary Detachment if they have the Battlesmith (X) Special Rule.\n• Units that include any Models with a Move Characteristic of ‘0’ or ‘-’ may not be selected.",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "forceEntryLinks": [
@@ -44823,6 +45666,17 @@
                   {
                     "childId": "04d9-b191-7ea7-d461",
                     "childName": "Primary - Sky-Hunter Phalanx",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "6f9b-3d99-7ecd-3214",
+                    "childName": "Primary - Armoured Spearhead",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -63985,6 +64839,17 @@
                         "shared": true,
                         "type": "equalTo",
                         "value": 0
+                      },
+                      {
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
                       }
                     ]
                   }
@@ -64064,6 +64929,17 @@
                       {
                         "childId": "04d9-b191-7ea7-d461",
                         "childName": "Primary - Sky-Hunter Phalanx",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      },
+                      {
+                        "childId": "6f9b-3d99-7ecd-3214",
+                        "childName": "Primary - Armoured Spearhead",
                         "field": "forces",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -64426,6 +65302,17 @@
                           {
                             "childId": "04d9-b191-7ea7-d461",
                             "childName": "Primary - Sky-Hunter Phalanx",
+                            "field": "forces",
+                            "includeChildForces": true,
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "6f9b-3d99-7ecd-3214",
+                            "childName": "Primary - Armoured Spearhead",
                             "field": "forces",
                             "includeChildForces": true,
                             "includeChildSelections": true,
