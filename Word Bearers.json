@@ -3607,6 +3607,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [

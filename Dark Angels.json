@@ -161,7 +161,27 @@
         "import": true,
         "targetId": "f369-7a8f-853b-fdc5",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "War-engine", "id": "c20e-155b-73ed-e0aa", "primary": true, "targetId": "2499-7239-685f-8465"}]
+        "categoryLinks": [{"name": "War-engine", "id": "c20e-155b-73ed-e0aa", "primary": true, "targetId": "2499-7239-685f-8465"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Firewing Enigmatus Cabal",

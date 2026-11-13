@@ -193,7 +193,27 @@
         "import": true,
         "targetId": "f592-7632-4c97-b1a7",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "f246-a295-6a63-f3e4", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "f246-a295-6a63-f3e4", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Fenrisian Wolf Pack",

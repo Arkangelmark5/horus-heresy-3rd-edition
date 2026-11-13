@@ -195,6 +195,24 @@
             "type": "set-primary",
             "value": "6b8d-15cd-2d41-9709",
             "conditions": [{"childId": "4737-e73a-394e-433f", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -206,7 +224,27 @@
         "import": true,
         "targetId": "1b41-8597-7168-c326",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Transport", "id": "3355-5afa-f53c-d3f0", "primary": true, "targetId": "d162-4711-5d60-0a48"}]
+        "categoryLinks": [{"name": "Transport", "id": "3355-5afa-f53c-d3f0", "primary": true, "targetId": "d162-4711-5d60-0a48"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Predator",
@@ -543,6 +581,24 @@
                 "scope": "force",
                 "shared": true,
                 "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -936,6 +992,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -975,7 +1049,27 @@
         "import": true,
         "targetId": "b26e-1244-2dbc-2b6d",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "War-engine", "id": "a59d-fa1d-cc92-c7ba", "primary": true, "targetId": "2499-7239-685f-8465"}]
+        "categoryLinks": [{"name": "War-engine", "id": "a59d-fa1d-cc92-c7ba", "primary": true, "targetId": "2499-7239-685f-8465"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Drop Pod",
@@ -1013,7 +1107,27 @@
         "import": true,
         "targetId": "29c3-0b90-216c-b071",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Transport", "id": "0add-1a19-39a7-587b", "primary": true, "targetId": "d162-4711-5d60-0a48"}]
+        "categoryLinks": [{"name": "Transport", "id": "0add-1a19-39a7-587b", "primary": true, "targetId": "d162-4711-5d60-0a48"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Land Raider Carrier",
@@ -1029,6 +1143,24 @@
             "type": "set-primary",
             "value": "6b8d-15cd-2d41-9709",
             "conditions": [{"childId": "4737-e73a-394e-433f", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1303,6 +1435,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1332,6 +1482,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1352,6 +1520,24 @@
               {
                 "childId": "6f9b-3d99-7ecd-3214",
                 "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
                 "field": "forces",
                 "includeChildForces": true,
                 "includeChildSelections": true,
@@ -1850,7 +2036,27 @@
         "import": true,
         "targetId": "26d7-23ba-4059-8079",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "089e-d3e4-6f20-0ea9", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "categoryLinks": [{"name": "High Command", "id": "089e-d3e4-6f20-0ea9", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Mounted Centurion",
@@ -1859,7 +2065,27 @@
         "import": true,
         "targetId": "2fb4-53c3-4e84-b9ec",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "920c-fe61-12b2-d264", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "920c-fe61-12b2-d264", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Librarian With Jump Pack",
@@ -1877,7 +2103,27 @@
         "import": true,
         "targetId": "e9e2-0c90-42f6-8853",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "ac6a-3979-e1a5-febd", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "ac6a-3979-e1a5-febd", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Librarian In Terminator Armour",
@@ -1904,7 +2150,27 @@
         "import": true,
         "targetId": "7ab5-b907-4fa0-9caa",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "73cd-68a6-e37d-fad2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "73cd-68a6-e37d-fad2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Esoterist In Terminator Armour",
@@ -1931,7 +2197,27 @@
         "import": true,
         "targetId": "81ff-36e6-4de3-a46b",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "0f24-fdfd-bf66-8087", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "0f24-fdfd-bf66-8087", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Legion Champion In Terminator Armour",
@@ -1958,7 +2244,27 @@
         "import": true,
         "targetId": "6924-162b-45e1-ac5a",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "d78a-2abe-47a9-01c2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "d78a-2abe-47a9-01c2", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Chaplain In Terminator Armour",
@@ -1985,7 +2291,27 @@
         "import": true,
         "targetId": "eb91-e184-4e8a-a0e0",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "8c08-0eb5-67bb-add6", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "8c08-0eb5-67bb-add6", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Herald In Terminator Armour",
@@ -2012,7 +2338,27 @@
         "import": true,
         "targetId": "36ee-6609-4807-b87b",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "2856-0a67-2edd-8f3a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "2856-0a67-2edd-8f3a", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Siege Breaker In Terminator Armour",
@@ -2039,7 +2385,27 @@
         "import": true,
         "targetId": "5a4f-828b-4fec-bf2e",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "ed79-d4c4-d4bd-b4bf", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "ed79-d4c4-d4bd-b4bf", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Moritat Mortalis",
@@ -2157,6 +2523,26 @@
             ],
             "modifiers": [{"field": "category", "type": "set-primary", "value": "20f7-dff3-810c-f7a7"}]
           }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {
@@ -2222,7 +2608,27 @@
         "import": true,
         "targetId": "5f81-c793-41fb-91dd",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "2cb5-1c39-2bfa-a267", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "2cb5-1c39-2bfa-a267", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Primus Medicae In Terminator Armour",
@@ -2249,7 +2655,27 @@
         "import": true,
         "targetId": "69bd-718d-4166-aecb",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "0e9d-670a-6190-ea29", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "0e9d-670a-6190-ea29", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Delegatus In Terminator Armour",
@@ -2397,7 +2823,27 @@
         "import": true,
         "targetId": "f28c-5af9-4645-b438",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Retinue", "id": "e128-615c-1b23-9da1", "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
+        "categoryLinks": [{"name": "Retinue", "id": "e128-615c-1b23-9da1", "primary": true, "targetId": "a38e-50ff-310f-f19e"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Outrider Praetorian Command Squad",
@@ -2406,7 +2852,27 @@
         "import": true,
         "targetId": "86dd-250d-494a-b8e4",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Retinue", "id": "6920-90c7-0c5f-93e3", "primary": true, "targetId": "a38e-50ff-310f-f19e"}]
+        "categoryLinks": [{"name": "Retinue", "id": "6920-90c7-0c5f-93e3", "primary": true, "targetId": "a38e-50ff-310f-f19e"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Veteran Breacher Squad",
@@ -2500,7 +2966,27 @@
         "import": true,
         "targetId": "e937-c704-4177-ac8d",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy Transport", "id": "8186-4568-d9f5-6ace", "primary": true, "targetId": "52d0-8b78-439e-18e5"}]
+        "categoryLinks": [{"name": "Heavy Transport", "id": "8186-4568-d9f5-6ace", "primary": true, "targetId": "52d0-8b78-439e-18e5"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Caestus Assault Ram",
@@ -2977,6 +3463,24 @@
                 "scope": "force",
                 "shared": true,
                 "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "3796-6952-fa80-ff9d",
+                "childName": "Primary - Orbital Drop Assault",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]

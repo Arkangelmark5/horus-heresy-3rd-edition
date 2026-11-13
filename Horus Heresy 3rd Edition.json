@@ -5258,6 +5258,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -6692,6 +6703,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -7937,6 +7959,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -8922,6 +8955,7 @@
               },
               {"name": "Paragon of Malevolence", "id": "6322-83ef-f10c-e816", "hidden": false, "targetId": "708b-b2ff-1a14-2901"}
             ],
+            "constraints": [{"id": "451f-1705-20c3-391e", "field": "forces", "scope": "parent", "shared": true, "type": "max", "value": -1}],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
               {"name": "Asset Point(s)", "typeId": "57e3-1031-7d4d-5ae3", "value": 0},
@@ -9421,6 +9455,24 @@
                       {"childId": "079a-11b5-abfa-96da", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "079a-11b5-abfa-96da", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
                     ]
+                  }
+                ]
+              },
+              {
+                "field": "451f-1705-20c3-391e",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
                   }
                 ]
               }
@@ -10030,6 +10082,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -11721,6 +11784,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12570,6 +12644,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -12927,6 +13012,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -17592,6 +17688,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -17987,6 +18094,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -18363,6 +18481,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -18922,6 +19051,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -20619,6 +20759,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21051,6 +21202,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21445,6 +21607,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -21555,6 +21728,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -21943,6 +22127,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -22363,6 +22558,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -22746,6 +22952,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23147,6 +23364,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               },
@@ -23290,6 +23518,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -23680,6 +23919,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24078,6 +24328,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -24456,6 +24717,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -24854,6 +25126,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25245,6 +25528,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -25358,6 +25652,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -25762,6 +26067,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26139,6 +26455,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -26541,6 +26868,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -26653,6 +26991,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27044,6 +27393,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -27411,6 +27771,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -27803,6 +28174,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -28149,6 +28531,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -28715,6 +29108,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -29384,6 +29788,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -29989,6 +30404,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -30448,6 +30874,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31124,6 +31561,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -31938,6 +32386,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -33832,6 +34291,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -36652,6 +37122,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -37409,6 +37890,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -38145,6 +38637,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -38785,6 +39288,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -40890,6 +41404,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -41526,6 +42051,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -41853,6 +42389,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -42301,6 +42848,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -43407,6 +43965,17 @@
                     "shared": true,
                     "type": "equalTo",
                     "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
                   }
                 ]
               }
@@ -43721,6 +44290,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
@@ -45327,6 +45907,647 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Primary - Orbital Drop Assault",
+            "id": "3796-6952-fa80-ff9d",
+            "hidden": true,
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "High Command",
+                "id": "3f59-f713-3a73-a99d",
+                "hidden": false,
+                "targetId": "d9a6-9b5f-b18a-4d63",
+                "constraints": [{"id": "0942-ba69-d1cd-f34a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime High Command",
+                "id": "08c6-82fe-86e4-0b3d",
+                "hidden": false,
+                "targetId": "3568-ad75-b452-3137",
+                "constraints": [{"id": "1abf-f2d6-cffe-5e6b", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Command",
+                "id": "742f-0767-3e3c-9d96",
+                "hidden": false,
+                "targetId": "6dbf-654a-f06f-2d69",
+                "constraints": [{"id": "54cf-b1ba-3ec1-a55d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Command",
+                "id": "ad66-34ff-4817-9150",
+                "hidden": false,
+                "targetId": "c85c-2963-658f-1bb9",
+                "tracked": true,
+                "constraints": [{"id": "450e-1ef4-c87c-c9be", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Retinue",
+                "id": "fa11-6491-c431-c4ec",
+                "hidden": false,
+                "targetId": "a38e-50ff-310f-f19e",
+                "constraints": [{"id": "401d-40b2-b145-d311", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Prime Retinue",
+                "id": "0884-9f2a-5507-9127",
+                "hidden": false,
+                "targetId": "c66b-ef39-b20f-725b",
+                "constraints": [{"id": "91a5-f103-61ff-bd28", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Elites",
+                "id": "8682-3673-207d-26b1",
+                "hidden": false,
+                "targetId": "5d5e-958f-e388-50b5",
+                "constraints": [{"id": "909f-d1e8-18ab-e1da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Elites",
+                "id": "2f36-70ef-3d5e-b7bc",
+                "hidden": false,
+                "targetId": "276f-7a07-a56c-affd",
+                "tracked": true,
+                "constraints": [{"id": "9047-e1d6-1966-8741", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Troops",
+                "id": "ab40-2583-efd2-3bde",
+                "hidden": false,
+                "targetId": "88e6-d373-4152-0dd8",
+                "constraints": [{"id": "eb88-0d5c-99c0-4d24", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Troops",
+                "id": "03eb-ffa2-fa92-f052",
+                "hidden": false,
+                "targetId": "c3f9-a7f3-984b-3fda",
+                "tracked": true,
+                "constraints": [{"id": "a052-898f-1569-ef59", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Support",
+                "id": "2fc9-52ed-d091-a423",
+                "hidden": false,
+                "targetId": "345f-9ba6-9b02-ed5c",
+                "constraints": [{"id": "6c04-75ca-0202-56e9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Support",
+                "id": "4f27-ac99-e5c9-e2e3",
+                "hidden": false,
+                "targetId": "1c79-ecdf-9a64-84c9",
+                "constraints": [{"id": "c825-d864-99ad-88c0", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Transport",
+                "id": "1592-d9a3-1ef2-fe26",
+                "hidden": false,
+                "targetId": "d162-4711-5d60-0a48",
+                "constraints": [{"id": "83e3-1cd3-cf30-938f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "83e3-1cd3-cf30-938f",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "88e6-d373-4152-0dd8",
+                        "childName": "Troops",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "22ee-7208-4089-b005",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "5d5e-958f-e388-50b5",
+                        "childName": "Elites",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "345f-9ba6-9b02-ed5c",
+                        "childName": "Support",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "a38e-50ff-310f-f19e",
+                        "childName": "Retinue",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "6dbf-654a-f06f-2d69",
+                        "childName": "Command",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "d9a6-9b5f-b18a-4d63",
+                        "childName": "High Command",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "3235-bd79-e9b1-60fa",
+                        "childName": "Heavy Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "cf96-8891-3f9a-8921",
+                        "childName": "Fast Attack",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "2499-7239-685f-8465",
+                        "childName": "War-engine",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "83e3-1cd3-cf30-938f",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "52d0-8b78-439e-18e5",
+                        "childName": "Heavy Transport",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Prime Transport",
+                "id": "8bce-0d52-45cc-001b",
+                "hidden": false,
+                "targetId": "fc27-1a48-84ae-aa7b",
+                "constraints": [{"id": "55fc-de2b-51f3-8886", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              },
+              {
+                "name": "Heavy Assault",
+                "id": "7789-7ad2-6034-73a3",
+                "hidden": false,
+                "targetId": "3235-bd79-e9b1-60fa",
+                "constraints": [{"id": "763c-4848-cb1b-856c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Prime Heavy Assault",
+                "id": "0046-de60-ebf2-3d5b",
+                "hidden": false,
+                "targetId": "1e95-35f0-1353-ffa1",
+                "tracked": true,
+                "constraints": [{"id": "e030-9ec9-f0f9-6647", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Heavy Transport",
+                "id": "cafb-260a-2473-c426",
+                "hidden": false,
+                "targetId": "52d0-8b78-439e-18e5",
+                "constraints": [{"id": "32d2-fa89-977c-5b14", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "32d2-fa89-977c-5b14",
+                    "type": "increment",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "88e6-d373-4152-0dd8",
+                        "childName": "Troops",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "22ee-7208-4089-b005",
+                        "childName": "Warlord",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "5d5e-958f-e388-50b5",
+                        "childName": "Elites",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "345f-9ba6-9b02-ed5c",
+                        "childName": "Support",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "a38e-50ff-310f-f19e",
+                        "childName": "Retinue",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "6dbf-654a-f06f-2d69",
+                        "childName": "Command",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "d9a6-9b5f-b18a-4d63",
+                        "childName": "High Command",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "3235-bd79-e9b1-60fa",
+                        "childName": "Heavy Assault",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "cf96-8891-3f9a-8921",
+                        "childName": "Fast Attack",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      },
+                      {
+                        "childId": "2499-7239-685f-8465",
+                        "childName": "War-engine",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "roster",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "32d2-fa89-977c-5b14",
+                    "type": "decrement",
+                    "value": 1,
+                    "repeats": [
+                      {
+                        "childId": "d162-4711-5d60-0a48",
+                        "childName": "Transport",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "force",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Prime Heavy Transport",
+                "id": "c999-7b74-e33c-6670",
+                "hidden": false,
+                "targetId": "abff-3686-c39a-9a24",
+                "constraints": [{"id": "90cb-5ebe-3ebd-76b8", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 0}]
+              }
+            ],
+            "costs": [
+              {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},
+              {"name": "Reaction Point(s)", "typeId": "c9ba-097e-c47f-ecc2", "value": 0},
+              {"name": "Auxiliary Detachment(s)", "typeId": "3e8e-05ee-be52-12d6", "value": 0},
+              {"name": "Apex Detachment(s)", "typeId": "159d-855c-533d-f592", "value": 0},
+              {"name": "Combined Warlord and Lord of War Points", "typeId": "14bd-cad0-cd3d-8b23", "value": 0},
+              {"name": "Mech LB", "typeId": "7275-cbe8-a563-7152", "value": 0},
+              {"name": "Tank Detachments", "typeId": "2cdf-186c-a655-d907", "value": 0},
+              {"name": "ZM Primary Detachment", "typeId": "37ff-b26e-18a9-7f57", "value": 0},
+              {"name": "Primary Detachment", "typeId": "394e-d166-d4e5-022a", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "comment": "DA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "0a35-fce3-188c-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "EC",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9a22-d01f-ab5c-ec07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "21c0-18db-03dd-ae07", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SW",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d995-cb33-be41-ecf8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f7b4-2531-0962-1379", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IF",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "d186-cffc-0950-f632", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "NL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "486f-b32a-ac87-73dd", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "BA",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "9cff-ac34-56ca-260f", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "IH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "736e-3967-e72b-e3ac", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WE",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "a956-190d-3b47-6258", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "UM",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "656a-07b6-d4fd-57af", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "DG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "be98-aa9d-64ef-f62c", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "TS",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "2496-21e2-1870-e9b8", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SH",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "ac06-fcec-b634-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "WB",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "4935-1832-63f7-91aa", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "SL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "f148-a6e4-5a8c-3aeb", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "RG",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "340c-1d4f-1f31-fb70", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "AL",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "8813-5298-c368-ee16", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Blackshields",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "c195-9a6a-a56b-4634", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      },
+                      {
+                        "comment": "Shattered Legions",
+                        "type": "and",
+                        "conditions": [
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "3256-29e9-1d7a-12a7", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Primary - Orbital Drop Assault",
+                "id": "591b-7fd1-7720-c977",
+                "hidden": false,
+                "typeId": "7c4f-ca47-b489-3125",
+                "typeName": "Detachment Description",
+                "characteristics": [
+                  {
+                    "name": "Detachment Composition",
+                    "$text": "1 High Command\n2 Command (1 Prime)\n1 Retinue\n2 Heavy Assault (1 Prime)\n2 Troops (1 Prime)\n2 Elite (1 Prime)\n2 Support\n\n\nFor each non-Vehicle Unit in an Army using this Primary Detachment, one Transport or Heavy Transport Slot may be added to this Detachment.\n\n\nRestrictions\n• Prime Advantages which add additional Battlefield Role Slots to a Detachment may not be selected. \n• Only the following other Detachments may be selected:\n- Tactical Support\n- First Strike (maximum of 1)\n- Shock Assault\n- Heavy Support\n- Warlord\n- Lord of War\n• All Units in an Army which uses this Primary Detachment must use the Orbital Drop Protocols deployment method.",
+                    "typeId": "ec3f-877b-f887-18b2"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "forceEntryLinks": [
@@ -45631,6 +46852,17 @@
                   {
                     "childId": "6f9b-3d99-7ecd-3214",
                     "childName": "Primary - Armoured Spearhead",
+                    "field": "forces",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  },
+                  {
+                    "childId": "3796-6952-fa80-ff9d",
+                    "childName": "Primary - Orbital Drop Assault",
                     "field": "forces",
                     "includeChildForces": true,
                     "includeChildSelections": true,
