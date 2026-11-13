@@ -123,6 +123,26 @@
         "categoryLinks": [
           {"name": "Retinue", "id": "9c37-18c3-9583-bdf4", "primary": true, "targetId": "a38e-50ff-310f-f19e"},
           {"name": "Iron Warriors", "id": "d4e6-3f81-7f8f-c543", "primary": false, "targetId": "b5d8-c965-7970-673f"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {

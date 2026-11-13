@@ -115,6 +115,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1109,7 +1127,27 @@
         "import": true,
         "targetId": "e62b-3d98-8678-1f97",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon", "id": "eb39-f6f6-5024-58c3", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}]
+        "categoryLinks": [{"name": "Recon", "id": "eb39-f6f6-5024-58c3", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Outrider Squadron",
@@ -1162,6 +1200,24 @@
               {
                 "childId": "6f9b-3d99-7ecd-3214",
                 "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
                 "field": "forces",
                 "includeChildForces": true,
                 "includeChildSelections": true,
@@ -2472,6 +2528,24 @@
               {
                 "childId": "6f9b-3d99-7ecd-3214",
                 "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "04d9-b191-7ea7-d461",
+                "childName": "Primary - Sky-Hunter Phalanx",
                 "field": "forces",
                 "includeChildForces": true,
                 "includeChildSelections": true,
