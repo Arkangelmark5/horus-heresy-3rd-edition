@@ -1056,8 +1056,7 @@
       {"name": "Command - Battlesmith or Decurion only", "id": "20f7-dff3-810c-f7a7", "hidden": false},
       {"name": "Support - Battlesmith or Vehicle only", "id": "0d7e-01ea-3b33-11e4", "hidden": false},
       {"name": "Command Decurion", "id": "42a3-8f43-17e0-e597", "hidden": false},
-      {"name": "Armour Decurion", "id": "533e-ae4f-7783-d3aa", "hidden": false},
-      {"name": "Recon - Battlesmith or Vehicle only", "id": "9f2b-7b7d-f67b-41ff", "hidden": false}
+      {"name": "Armour Decurion", "id": "533e-ae4f-7783-d3aa", "hidden": false}
     ],
     "costTypes": [
       {
@@ -7598,37 +7597,19 @@
                     "value": true,
                     "conditionGroups": [
                       {
-                        "type": "or",
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "122b-0eda-4e29-401e",
-                                "field": "selections",
-                                "includeChildForces": true,
-                                "includeChildSelections": true,
-                                "scope": "roster",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
-                            ]
-                          }
-                        ],
+                        "type": "and",
                         "conditions": [
                           {
-                            "childId": "6f9b-3d99-7ecd-3214",
-                            "childName": "Primary - Armoured Spearhead",
-                            "field": "forces",
+                            "childId": "122b-0eda-4e29-401e",
+                            "field": "selections",
                             "includeChildForces": true,
                             "includeChildSelections": true,
                             "scope": "roster",
                             "shared": true,
                             "type": "atLeast",
                             "value": 1
-                          }
+                          },
+                          {"childId": "c195-9a6a-a56b-4634", "field": "forces", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
                         ]
                       }
                     ]
@@ -7688,34 +7669,7 @@
                   }
                 ]
               },
-              {"name": "Paragon of Malevolence", "id": "d74e-66f2-0b58-f2e6", "hidden": false, "targetId": "708b-b2ff-1a14-2901"},
-              {
-                "name": "Recon - Battlesmith or Vehicle only",
-                "id": "ceb3-dbac-278b-239b",
-                "hidden": true,
-                "targetId": "9f2b-7b7d-f67b-41ff",
-                "constraints": [{"id": "e08a-e4e9-d6f3-49b2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
-                "modifiers": [
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": false,
-                    "conditions": [
-                      {
-                        "childId": "6f9b-3d99-7ecd-3214",
-                        "childName": "Primary - Armoured Spearhead",
-                        "field": "forces",
-                        "includeChildForces": true,
-                        "includeChildSelections": true,
-                        "scope": "roster",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
+              {"name": "Paragon of Malevolence", "id": "d74e-66f2-0b58-f2e6", "hidden": false, "targetId": "708b-b2ff-1a14-2901"}
             ],
             "costs": [
               {"name": "Point(s)", "typeId": "9893-c379-920b-8982", "value": 0},

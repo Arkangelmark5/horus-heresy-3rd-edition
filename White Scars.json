@@ -156,6 +156,26 @@
         "categoryLinks": [
           {"name": "White Scars", "id": "00eb-941f-a592-27a4", "primary": false, "targetId": "ad95-5dc4-7b15-8ff3"},
           {"name": "Recon", "id": "e6a5-8c09-31aa-04d3", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {

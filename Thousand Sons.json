@@ -152,7 +152,27 @@
         "import": true,
         "targetId": "d661-5aa7-4e05-a6e5",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon", "id": "acdd-fee4-d3f5-07ff", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}]
+        "categoryLinks": [{"name": "Recon", "id": "acdd-fee4-d3f5-07ff", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Inductii Squad",

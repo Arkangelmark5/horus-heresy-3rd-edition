@@ -510,7 +510,26 @@
         "import": true,
         "targetId": "f214-aeb9-0dd6-9071",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Command", "id": "e2e2-ebf4-2680-160d", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}]
+        "categoryLinks": [{"name": "Command", "id": "e2e2-ebf4-2680-160d", "primary": true, "targetId": "6dbf-654a-f06f-2d69"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "20f7-dff3-810c-f7a7",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Moritat",
@@ -865,27 +884,7 @@
         "import": true,
         "targetId": "84cd-c790-5886-8814",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Support", "id": "25b7-7573-1c25-828d", "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}],
-        "modifierGroups": [
-          {
-            "comment": "Armoured Spearhead",
-            "type": "and",
-            "conditions": [
-              {
-                "childId": "6f9b-3d99-7ecd-3214",
-                "childName": "Primary - Armoured Spearhead",
-                "field": "forces",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "instanceOf",
-                "value": 1
-              }
-            ],
-            "modifiers": [{"field": "category", "type": "set-primary", "value": "0d7e-01ea-3b33-11e4"}]
-          }
-        ]
+        "categoryLinks": [{"name": "Support", "id": "25b7-7573-1c25-828d", "primary": true, "targetId": "345f-9ba6-9b02-ed5c"}]
       },
       {
         "name": "Araknae Quad Accelerator Platform",
@@ -967,7 +966,27 @@
         "import": true,
         "targetId": "2eb3-783d-8dde-733b",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Transport", "id": "55d3-5d55-7368-d9bc", "primary": true, "targetId": "d162-4711-5d60-0a48"}]
+        "categoryLinks": [{"name": "Transport", "id": "55d3-5d55-7368-d9bc", "primary": true, "targetId": "d162-4711-5d60-0a48"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Termite",
@@ -1002,7 +1021,27 @@
         "import": true,
         "targetId": "e004-bc89-4e2f-c59d",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Heavy Transport", "id": "04a9-6733-0710-7805", "primary": true, "targetId": "52d0-8b78-439e-18e5"}]
+        "categoryLinks": [{"name": "Heavy Transport", "id": "04a9-6733-0710-7805", "primary": true, "targetId": "52d0-8b78-439e-18e5"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Dreadclaw Drop Pod",
@@ -1042,6 +1081,24 @@
             "type": "set-primary",
             "value": "f8c3-f44e-569f-4418",
             "conditions": [{"childId": "27bf-3e6b-587c-74bb", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1093,6 +1150,24 @@
                 "scope": "ancestor",
                 "shared": true,
                 "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
                 "value": 1
               }
             ]
@@ -1154,6 +1229,24 @@
             "type": "set-primary",
             "value": "eaec-7669-f5ba-3ad9",
             "conditions": [{"childId": "0f6e-3db8-8b6f-74e1", "field": "forces", "includeChildSelections": true, "scope": "force", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -1164,7 +1257,27 @@
         "import": true,
         "targetId": "50f3-fca2-49ab-6de4",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "d9f3-1076-2c5a-01ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
+        "categoryLinks": [{"name": "Fast Attack", "id": "d9f3-1076-2c5a-01ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Land Speeder Squadron",
@@ -1173,7 +1286,27 @@
         "import": true,
         "targetId": "7ebb-cdb2-017e-7c51",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Fast Attack", "id": "d57c-dca8-9b5c-b0ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}]
+        "categoryLinks": [{"name": "Fast Attack", "id": "d57c-dca8-9b5c-b0ad", "primary": true, "targetId": "cf96-8891-3f9a-8921"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Sicaran",
@@ -2329,7 +2462,27 @@
         "import": true,
         "targetId": "b17c-db9a-43b0-82f0",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon", "id": "3673-5f38-4d2c-37de", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}]
+        "categoryLinks": [{"name": "Recon", "id": "3673-5f38-4d2c-37de", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Scout Squad",
@@ -2338,7 +2491,27 @@
         "import": true,
         "targetId": "e787-5b99-4fc2-9b4f",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "Recon", "id": "751b-7506-5c27-36d0", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}]
+        "categoryLinks": [{"name": "Recon", "id": "751b-7506-5c27-36d0", "primary": true, "targetId": "2b65-a3f2-620a-dc58"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Legion Basilisk",
@@ -2715,7 +2888,26 @@
         "import": true,
         "targetId": "863e-3da7-164a-fe40",
         "type": "selectionEntry",
-        "categoryLinks": [{"name": "High Command", "id": "fe5f-e4b9-2fcf-d7e0", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}]
+        "categoryLinks": [{"name": "High Command", "id": "fe5f-e4b9-2fcf-d7e0", "primary": true, "targetId": "d9a6-9b5f-b18a-4d63"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "set-primary",
+            "value": "80c1-b49d-ae67-3269",
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Veteran Despoiler Squad",

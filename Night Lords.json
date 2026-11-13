@@ -54,6 +54,26 @@
         "categoryLinks": [
           {"name": "Fast Attack", "id": "8f7f-0978-b6f6-7b7f", "primary": true, "targetId": "cf96-8891-3f9a-8921"},
           {"name": "Night Lords", "id": "f724-5479-4e7d-a75d", "primary": false, "targetId": "9c9d-4e53-09d5-8748"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6f9b-3d99-7ecd-3214",
+                "childName": "Primary - Armoured Spearhead",
+                "field": "forces",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
         ]
       },
       {
